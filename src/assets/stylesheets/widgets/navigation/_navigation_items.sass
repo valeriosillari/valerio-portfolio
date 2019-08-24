@@ -1,0 +1,61 @@
+// <ul> element
+.dot-items
+  margin: 0
+  padding: 0
+  list-style: none
+
+// <a> element
+.dot-item-link
+  display: block
+  padding: 15px 10px
+  border-top: 1px solid $color_navigation_item_border_mobile
+  background: $color_navigation_item_bg_mobile
+  text-align: center
+
+  .text
+    color: $color_navigation_item_text_mobile
+    font-size: $nav_item_size_mobile
+
+  &:hover,
+  &.active
+    .text
+      color: $color_navigation_item_text_mobile_active
+
+  &:hover
+    background: $color_navigation_item_bg_mobile_hover
+
+  &.active
+    background: $color_navigation_item_bg_mobile_active
+
+
+// -------------------------------------------------------------
++breakpoint($is_screen_desktop)
+  .dot-item
+    position: relative
+    width: 25px
+    height: 25px
+    margin-top: 5px
+
+  // <a> element
+  .dot-item-link
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    padding: 0
+    transition: background 0.25s ease
+    border-top: none
+    border-radius: 50%
+    background: $color_navigation_item_bg_desktop
+    text-indent: -9999px
+
+    &:hover,
+    &.active
+      box-shadow: none
+
+    &:hover
+      background: $color_navigation_item_bg_desktop_hover
+
+    &.active
+      background: $color_navigation_item_bg_desktop_active

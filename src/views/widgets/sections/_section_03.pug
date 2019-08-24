@@ -1,0 +1,33 @@
+- title       = `Portfolio`
+- subtitle    = `What I love to do.`
+
+
+//- set dummy array for portfolio: set empty array and then add items/objects inside
+//- https://github.com/pugjs/pug/issues/502
+- portofolioItemsArray = []
+- portofolioItemsArray.push({title: 'Sparwelt',             details: 'Html / Css / Js',               description: 'Frontend  with Twig, Sass, Webpack and GulpJS',             thumbName: 'thumb-website-sparwelt.jpg',              thumbLink: `https://www.sparwelt.de/`,                                                  isFancyBoxDisabled: true})
+- portofolioItemsArray.push({title: 'Zitronenstrasse',      details: 'Html / Css / Js',               description: 'Frontend with VueJS and Google Map API',                    thumbName: 'thumb-website-zitronenstrasse.jpg',       thumbLink: `http://www.zitronenstrasse.com/`,                                           isFancyBoxDisabled: true})
+- portofolioItemsArray.push({title: 'Ricette con la birra', details: 'Html / Css / Js',               description: 'Wordpress Optimization',                                    thumbName: 'thumb-website-ricette-con-la-birra.jpg',  thumbLink: `http://ricetteconlabirra.it/`,                                              isFancyBoxDisabled: true})
+- portofolioItemsArray.push({title: 'Ennio Logo',           details: 'Branding / Illustration',       description: 'Concept and design for Ennio Profumerie Logo (Proposal)',   thumbName: 'thumb-logo-ennio.jpg',                    thumbLink: `/assets/images/portfolio/thumb_big/thumb-logo-ennio.jpg`,                   isFancyBoxDisabled: false})
+- portofolioItemsArray.push({title: 'iTasty Logo',          details: 'Branding / Illustration',       description: 'Concept and design for iTasty Logo (Proposal)',             thumbName: 'thumb-logo-itasty.jpg',                   thumbLink: `/assets/images/portfolio/thumb_big/thumb-logo-itasty.jpg`,                  isFancyBoxDisabled: false})
+- portofolioItemsArray.push({title: 'Softweb Logo',         details: 'Branding / Illustration',       description: 'Concept and design for Softweb Srl',                        thumbName: 'thumb-logo-softweb.jpg',                  thumbLink: `/assets/images/portfolio/thumb_big/thumb-logo-softweb.jpg`,                 isFancyBoxDisabled: false})
+- portofolioItemsArray.push({title: 'Profumi Introvabili',  details: 'Html / Css / Js',               description: 'Frontend Development (proposal)',                           thumbName: 'thumb-website-profumi-introvabili.jpg',   thumbLink: `/assets/images/portfolio/thumb_big/thumb-website-profumi-introvabili.jpg`,  isFancyBoxDisabled: false})
+- portofolioItemsArray.push({title: 'Bottonia Video',       details: 'Shooting / Editing',            description: 'Online Commercial for Bottonia bijoux',                     thumbName: 'thumb-video-bottonia.jpg',                thumbLink: `http://player.vimeo.com/video/18041086`,                                    isFancyBoxDisabled: false})
+- portofolioItemsArray.push({title: 'Softweb Video',        details: 'Illustration / Postprodution',  description: 'Online Commercial for Softweb Srl',                         thumbName: 'thumb-video-softweb.jpg',                 thumbLink: `http://player.vimeo.com/video/22019445`,                                    isFancyBoxDisabled: false})
+
+
+
+//- ------------------------------------
+//- set markup
+
+//- section heading mixin
++sectionHeading(title, subtitle)
+
+//- content area
+.row
+
+  each item in portofolioItemsArray
+
+    .col-sm-6.col-lg-4
+      //- mixins teaser card
+      +teaserCard(item.title, item.description, item.details, item.thumbLink, item.thumbName, item.isFancyBoxDisabled)

@@ -1,0 +1,90 @@
+{
+  "name": "valerio-portfolio",
+  "description": "Valerio Portofolio Website",
+  "author": "Valerio Sillari | @stellavalerio",
+  "version": "10.0.0",
+  "private": true,
+  "license": "GPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/valeriosillari/valerio-portfolio"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "gulp",
+    "webpack"
+  ],
+  "main": "./server/start",
+  "scripts": {
+    "prettier": "prettier --write '**/*.{css,scss,js}'",
+    "lint-js": "eslint src/**/*.js",
+    "fix-js": "yarn prettier && eslint --fix src/**/*.js",
+    "lint-sass": "sass-lint -c -v -q",
+    "fix-sass": "sass-lint-auto-fix",
+    "dev": "gulp serve",
+    "build": "gulp build",
+    "now-build": "yarn lint-sass && yarn lint-js && gulp build"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "dependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/node": "^7.2.2",
+    "@babel/polyfill": "^7.4.4",
+    "@babel/preset-env": "^7.3.4",
+    "@fancyapps/fancybox": "3.5.7",
+    "animate.css": "^3.7.0",
+    "babel-loader": "^8.0.5",
+    "bootstrap": "4.3.1",
+    "breakpoint-sass": "^2.7.1",
+    "browser-sync": "^2.26.3",
+    "cookieconsent": "^3.1.0",
+    "cssnano": "^4.1.10",
+    "debug": "~2.6.9",
+    "dotenv": "^7.0.0",
+    "dotenv-webpack": "^1.7.0",
+    "express": "~4.16.0",
+    "gsap": "^2.1.2",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^v6.0.0",
+    "gulp-cache": "^v1.1.1",
+    "gulp-imagemin": "^v5.0.0",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-modernizr": "^3.2.1",
+    "gulp-nodemon": "^2.4.2",
+    "gulp-postcss": "^8.0.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^v4.0.2",
+    "gulp-uglify": "^v3.0.1",
+    "headroom.js": "^0.9.4",
+    "http-errors": "~1.6.2",
+    "jquery": "^3.4.1",
+    "lazysizes": "^4.1.7",
+    "node-zopfli-es": "^1.0.3",
+    "pug": "^2.0.3",
+    "scrollmagic": "^2.0.6",
+    "shrink-ray-current": "^4.0.0",
+    "webpack": "^4.29.6",
+    "webpack-stream": "^5.2.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-import-resolver-webpack": "^0.11.1",
+    "eslint-plugin-import": "^2.17.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-react": "^7.12.4",
+    "prettier": "1.16.4",
+    "sass-lint": "^1.12.1",
+    "sass-lint-auto-fix": "^0.16.2"
+  }
+}

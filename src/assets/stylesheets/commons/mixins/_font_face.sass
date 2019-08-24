@@ -1,0 +1,14 @@
+// mixins set on :
+// https://css-tricks.com/snippets/css/using-font-face/
+// https://github.com/magnetikonline/sassboilerplate/blob/master/fontface.scss
+
+// folder for all fonts
+$folder_path: '../fonts'
+
+=font_face($family_name, $src_path, $src_file_name, $style: normal, $weight: normal)
+  @font-face
+    font-family: $family_name
+    font-style: $style
+    font-weight: $weight
+    font-display: swap
+    src: url('#{$folder_path}/#{$src_path}/#{$src_file_name}.woff2') format('woff2'), url('#{$folder_path}/#{$src_path}/#{$src_file_name}.woff') format('woff'), url('../fonts/#{$src_path}/#{$src_file_name}.ttf') format('truetype')

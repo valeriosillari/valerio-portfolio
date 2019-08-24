@@ -1,0 +1,17 @@
+
+mixin lazyLoadThumb(thumbSource, thumbPlaceholder, thumbTitle)
+
+  img(
+    class     ='thumb js-lazy',
+    src       =`assets/images/${thumbPlaceholder}`,
+    data-src  =`assets/images/${thumbSource}`,
+    alt       =thumbTitle
+  )
+
+  //- fallback
+  noscript
+    img(
+      class     ='thumb',
+      src       =`assets/images/${thumbSource}`,
+      alt       =thumbTitle
+    )

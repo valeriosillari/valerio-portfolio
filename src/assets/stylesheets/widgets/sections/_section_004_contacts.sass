@@ -1,0 +1,37 @@
+// Section 004 | Contacts
+
+.section-4
+  background: $color_bg_section_04
+  color: $color_text_section_04
+
+  .section-heading
+    color: $color_heading_section_04
+
+  .info-area,
+  .social-icons
+    margin-bottom: 20px
+
+  .info-area
+    margin-top: 20px
+
+  // mail link
+  .link
+    color: $color_link_section_04
+    font-size: $font_size_contact_mail_mobile
+
+    &:hover
+      color: $color_link_section_04_hvr
+
+// -------------------------------------------------------------
++breakpoint($is_screen_desktop)
+  .section-4
+
+    .section-heading
+      margin-bottom: 20px
+
+    .info-area
+      margin-top: 30px
+
+    // mail link
+    .link
+      font-size: $font_size_contact_mail_desktop

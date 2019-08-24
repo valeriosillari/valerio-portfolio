@@ -1,0 +1,16 @@
+// ALL IMAGES added in the markup are using LAZY load!!!
+
+
+// we use this extra class for handling the fading transition effect
+// every image that use lazy load also need this class.
+.thumb
+  // image fluid as in bootstrap
+  max-width: 100%
+  height: auto
+  transition: opacity 1s ease-in-out
+
+.js-lazy
+  opacity: 0
+
+.js-lazy-loaded
+  opacity: 1

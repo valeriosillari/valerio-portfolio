@@ -1,0 +1,45 @@
+extends ../layouts/layout_default
+
+block pageVariables
+  - isPageHome = true
+  
+block content
+
+  //- todo: too complicatd! set easier !!!
+
+  //- set mixins
+  mixin sectionMixins(itemNumber)
+
+    //- mixins : set variables
+    - setClassSelector  = `section-${itemNumber}`
+    - setClasses        = `section ${setClassSelector} js-section js-${setClassSelector}`
+    - setId             = `${setClassSelector}`
+    - setContentClass   = `content content-${itemNumber}`
+
+    //- mixins : set markup
+    section(class=setClasses, id=setId)
+    
+      .container
+
+        //- section 01
+        if itemNumber == 1
+          include ../widgets/sections/_section_01.pug
+
+        //- section 02
+        else if itemNumber == 2
+          include ../widgets/sections/_section_02.pug
+
+        //- section 03
+        else if itemNumber == 3
+          include ../widgets/sections/_section_03.pug
+
+        //- section 04
+        else if itemNumber == 4
+          include ../widgets/sections/_section_04.pug
+
+
+  //- set markup with a loop and a mixins
+  //- set loop
+  - for (let item of [1,2,3,4])
+    //- set mixins
+    +sectionMixins(item)
