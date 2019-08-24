@@ -1,9 +1,4 @@
-# TODO | Valerio Portfolio Website
-
-### work in progress
-
-- now
-  -- check value analytcis google
+# TODO | Valerio Portfolio
 
 ### nice to have or try
 
