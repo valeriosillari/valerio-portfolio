@@ -3,7 +3,7 @@ import criticalPkg from 'critical'
 import appVariables from '../variables/app_variables'
 
 const critical = cb => {
-  console.log('====== critical START ======')
+  console.log('====== critical START 001 ======')
 
   criticalPkg.generate({
     inline: true,
@@ -30,7 +30,7 @@ const critical = cb => {
     dest: `index.html`,
   })
 
-  console.log('====== critical END ======')
+  console.log('====== critical END 001 ======')
 
   // task callback
   cb()
