@@ -1,6 +1,5 @@
 import dotenv from 'dotenv'
 import path from 'path'
-import shrinkRay from 'shrink-ray-current'
 import express from 'express'
 import createError from 'http-errors'
 import routes from '../routes/routesList'
@@ -12,9 +11,6 @@ const dotenvKeys = dotenv.config({
 })
 
 const app = express()
-
-// serve compressed stuff (brotli / gzip as fallback). after start compression.
-app.use(shrinkRay())
 
 // url encoded to pass correct data from FE to server (contact form)
 app.use(express.urlencoded({ extended: false }))
