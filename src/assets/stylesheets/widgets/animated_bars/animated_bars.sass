@@ -11,19 +11,19 @@
     .title
       color: $color_bar_title
 
-    .bar
-      position: relative
-      width: 0
-      margin: 0.25em 0
-      transition: width 1s,background .1s
-      background: $color_bar_animated
-      color: $color_bar_text
 
-    .label
-      display: inline-block
-      position: relative
-      width: 13.5em
-      padding: 1em
-      background: $color_bar_animated
-      font-size: 0.75em
-      font-weight: bold
+    .bar-item
+      margin-bottom: 6px
+
+      .label
+        display: inline-block
+        // background: $color_bar_animated
+        font-size: 14px
+        color: $color_bar_text
+
+      .bar
+        position: relative
+        width: 0
+        transition: width 1s,background .1s
+        background: $color_bar_animated
+        height: 45px
