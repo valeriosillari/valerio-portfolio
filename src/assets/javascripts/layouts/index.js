@@ -12,4 +12,4 @@ import 'widget_overlay'
 import 'widget_contact_form'
 import 'widget_cookie_consent'
 
-console.log('🚀 | static | 006')
+console.log('🚀 | static | 007')
