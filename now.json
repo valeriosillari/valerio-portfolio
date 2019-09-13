@@ -2,7 +2,16 @@
   "name": "valerio-portfolio",
   "version": 2,
   "alias": ["valeriosillari.com", "www.valeriosillari.com"],
-  "builds": [{ "src": "package.json", "use": "@now/static-build" }],
+  "builds": [
+    {
+      "src": "screenshot.js",
+      "use": "@now/node",
+      "config": {
+        "maxLambdaSize": "40mb"
+      }
+    },
+    { "src": "package.json", "use": "@now/static-build" }
+  ],
   "regions": ["bru", "cdg1", "arn1"],
   "build": {
     "env": {
@@ -17,6 +26,7 @@
       "src": "/policy",
       "dest": "/policy.html"
     },
+    { "src": "/(.*)", "dest": "/screenshot.js" },
     {
       "src": "/.*",
       "status": 404,
