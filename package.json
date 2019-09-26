@@ -85,6 +85,7 @@
     "eslint-plugin-react": "^7.12.4",
     "jest": "^24.9.0",
     "jest-image-snapshot": "^2.11.0",
+    "jest-puppeteer": "^4.3.0",
     "prettier": "1.16.4",
     "sass-lint": "^1.12.1",
     "sass-lint-auto-fix": "^0.16.2"
