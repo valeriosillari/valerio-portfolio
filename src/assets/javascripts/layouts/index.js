@@ -10,6 +10,6 @@ import 'widget_navigation'
 import 'widget_animated_bars'
 import 'widget_overlay'
 import 'widget_contact_form'
-import 'widget_cookie_consent'
+// import 'widget_cookie_consent'
 
 console.log('🚀')
