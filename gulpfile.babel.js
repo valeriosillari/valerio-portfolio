@@ -33,8 +33,12 @@ exports.serverNodemon = serverNodemon
 exports.startBrowserSync = startBrowserSync
 
 // -----------
-// serve task | Dev Mode
+// serve task | Dev Mode | 9000
 exports.serve = gulp.series(assets, serverNodemon, startBrowserSync)
+
+// -----------
+// up task | 5000
+exports.up = gulp.series(assets, serverNodemon)
 
 // -----------
 // deploy task | Prod Mode

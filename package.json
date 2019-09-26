@@ -24,8 +24,11 @@
     "fix-sass": "sass-lint-auto-fix",
     "dev": "gulp serve",
     "test": "jest",
+    "up": "gulp up",
     "build": "gulp build",
-    "now-build": "yarn lint-sass && yarn lint-js && gulp build"
+    "now-build": "yarn lint-sass && yarn lint-js && gulp build",
+    "jest:integration": "jest -c integration/jest.config.js",
+    "test:integration": "start-server-and-test up http-get://localhost:5000 jest:integration"
   },
   "babel": {
     "presets": [
@@ -88,6 +91,7 @@
     "jest-puppeteer": "^4.3.0",
     "prettier": "1.16.4",
     "sass-lint": "^1.12.1",
-    "sass-lint-auto-fix": "^0.16.2"
+    "sass-lint-auto-fix": "^0.16.2",
+    "start-server-and-test": "^1.10.2"
   }
 }
