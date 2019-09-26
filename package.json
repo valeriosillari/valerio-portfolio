@@ -23,8 +23,14 @@
     "lint-sass": "sass-lint -c -v -q",
     "fix-sass": "sass-lint-auto-fix",
     "dev": "gulp serve",
+    "test": "jest",
     "build": "gulp build",
     "now-build": "yarn lint-sass && yarn lint-js && gulp build"
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "./jest-setup.js"
+    ]
   },
   "babel": {
     "presets": [
@@ -67,6 +73,7 @@
     "jquery": "^3.4.1",
     "lazysizes": "^4.1.7",
     "pug": "^2.0.3",
+    "puppeteer": "^1.20.0",
     "scrollmagic": "^2.0.6",
     "webpack": "^4.29.6",
     "webpack-stream": "^5.2.1"
