@@ -1,4 +1,4 @@
-const { toMatchImageSnapshot } = require('jest-image-snapshot')
+import { toMatchImageSnapshot } from 'jest-image-snapshot'
 
 // function sum(a, b) {
 //   return a + b
