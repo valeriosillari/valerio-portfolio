@@ -27,11 +27,6 @@
     "build": "gulp build",
     "now-build": "yarn lint-sass && yarn lint-js && gulp build"
   },
-  "jest": {
-    "setupFilesAfterEnv": [
-      "./jest-setup.js"
-    ]
-  },
   "babel": {
     "presets": [
       "@babel/preset-env"
