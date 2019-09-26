@@ -9,3 +9,9 @@ describe('My First Test', () => {
     cy.get('.section-1 .title').should('have.text', 'Hello.')
   })
 })
+
+describe('ScreenshotTest', function() {
+  it('takes a screenshot Home', function() {
+    cy.screenshot('screenshots/screenshot-homepage')
+  })
+})
