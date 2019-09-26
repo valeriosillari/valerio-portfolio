@@ -17,7 +17,6 @@
   ],
   "main": "./server/start",
   "scripts": {
-    "cy:open": "cypress open",
     "prettier": "prettier --write '**/*.{css,scss,js}'",
     "lint-js": "eslint src/**/*.js",
     "fix-js": "yarn prettier && eslint --fix src/**/*.js",
@@ -25,6 +24,7 @@
     "fix-sass": "sass-lint-auto-fix",
     "dev": "gulp serve",
     "build": "gulp build",
+    "cy:open": "cypress open",
     "now-build": "yarn lint-sass && yarn lint-js && gulp build"
   },
   "babel": {
