@@ -17,6 +17,7 @@
   ],
   "main": "./server/start",
   "scripts": {
+    "cy:open": "cypress open",
     "prettier": "prettier --write '**/*.{css,scss,js}'",
     "lint-js": "eslint src/**/*.js",
     "fix-js": "yarn prettier && eslint --fix src/**/*.js",

@@ -1,6 +1,6 @@
 describe('My First Test', () => {
   it('Visits the App Homepage', () => {
-    cy.visit('http://localhost:9000')
+    cy.visit('/')
   })
 })
 
