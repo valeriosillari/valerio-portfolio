@@ -10,8 +10,9 @@ describe('My First Test', () => {
   })
 })
 
-describe('ScreenshotTest', function() {
-  it('takes a screenshot Home', function() {
-    cy.screenshot('screenshots/screenshot-homepage')
-  })
-})
+// just do a screenshot
+// describe('ScreenshotTest', function() {
+//   it('takes a screenshot Home', function() {
+//     cy.screenshot('screenshots/screenshot-homepage')
+//   })
+// })
