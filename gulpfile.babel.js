@@ -6,6 +6,7 @@ import styles from './config/gulp/task_styles'
 import modernizr from './config/gulp/task_modernizr'
 import scripts from './config/gulp/task_scripts'
 import views from './config/gulp/task_views'
+import critical from './config/gulp/task_critical'
 import assets from './config/gulp/task_assets'
 import serverNodemon from './config/gulp/task_server_nodemon'
 import startBrowserSync from './config/gulp/task_browser_sync'
@@ -28,6 +29,8 @@ exports.views = views
 
 exports.assets = assets
 
+exports.critical = critical
+
 exports.serverNodemon = serverNodemon
 
 exports.startBrowserSync = startBrowserSync
@@ -38,7 +41,7 @@ exports.serve = gulp.series(assets, serverNodemon, startBrowserSync)
 
 // -----------
 // deploy task | Prod Mode
-exports.build = gulp.series(assets, views)
+exports.build = gulp.series(assets, views, critical)
 
 // -----------
 // default task | compile all assets
