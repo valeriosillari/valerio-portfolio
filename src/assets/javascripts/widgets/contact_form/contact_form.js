@@ -1,7 +1,10 @@
 import $ from 'jquery'
 
 const urlMailServerValidation =
+  // mailer PROD
   'https://express-contact-form.herokuapp.com/submit'
+// mailer DEV
+// 'https://express-contact-form-develop.herokuapp.com/submit'
 
 const btnSubmitElement = '.js-form-btn-submit'
 const buttonSubmitSendingClass = 'js-form-submit-sending'
