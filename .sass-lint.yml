@@ -6,7 +6,7 @@
 
 # file to check
 files:
-  include: "**/*.s+(a|c)ss"
+  include: '**/*.s+(a|c)ss'
 
   # ignore files
   ignore:
