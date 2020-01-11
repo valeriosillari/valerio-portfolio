@@ -33,6 +33,9 @@ const appVariables = {
   srcFileLayoutStylesheet   : './src/assets/stylesheets/layouts/index.sass',
   srcFileLayoutJavascript   : './src/assets/javascripts/layouts/index.js',
 
+  // pages file name array : one entry for each page, with same file name
+  srcPagesFilenameArray     : ['error', 'index', 'policy'],
+
   // generated folders/files
   generatedFolderModernizr  : './src/assets/generated',
 
