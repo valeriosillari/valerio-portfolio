@@ -33,8 +33,9 @@ const critical = cb => {
   console.log(
     '====== critical START : we need a sync loop, one after eahc other ======'
   )
-  criticalCoreTask('index')
-  console.log('====== critical END ======')
+  appVariables.srcPagesFilenameArray.map(fileName => criticalCoreTask(fileName))
+
+  console.log('====== critical END 001 ======')
 
   // task callback
   cb()
