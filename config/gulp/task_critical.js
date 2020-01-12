@@ -2,15 +2,13 @@ import gulp from 'gulp'
 import criticalPkg from 'critical'
 import appVariables from '../variables/app_variables'
 
-const critical = cb => {
-  console.log('====== critical START 001 ======')
-
-  criticalPkg.generate({
+const criticalCoreTask = pageName => {
+  return criticalPkg.generate({
     inline: true,
     minify: true,
     // check folder with DIST files
     base: appVariables.distFolderAssets,
-    src: 'index.html',
+    src: `${pageName}.html`,
     css: './dist/assets/stylesheets/index.min.css',
     ignore: ['font-face'],
     dimensions: [
@@ -27,10 +25,16 @@ const critical = cb => {
         height: 960,
       },
     ],
-    dest: `index.html`,
+    dest: `${pageName}.html`,
   })
+}
 
-  console.log('====== critical END 001 ======')
+const critical = cb => {
+  console.log(
+    '====== critical START : we need a sync loop, one after eahc other ======'
+  )
+  criticalCoreTask('index')
+  console.log('====== critical END ======')
 
   // task callback
   cb()
