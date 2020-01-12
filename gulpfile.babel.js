@@ -41,7 +41,9 @@ exports.serve = gulp.series(assets, serverNodemon, startBrowserSync)
 
 // -----------
 // deploy task | Prod Mode
-exports.build = gulp.series(assets, views, critical)
+// TODO: test task. check also assets later
+// exports.build = gulp.series(assets, views, critical)
+exports.build = gulp.series(views, critical)
 
 // -----------
 // default task | compile all assets
