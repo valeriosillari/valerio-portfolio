@@ -7,7 +7,6 @@
 # Ignore Node Modules Folder
 node_modules
 
-
 # Ignore GULP generated folders and files.
 /src/assets/generated
 
