@@ -16,6 +16,7 @@ const images = cb => {
         gulpPlugin.imagemin(
           // Set options
           [
+            // 26.03.2020: comment out for now. issue during deploy. but no GIF to take care, so ...
             // gulpPlugin.imagemin.gifsicle({
             //   interlaced: true,
             // }),
