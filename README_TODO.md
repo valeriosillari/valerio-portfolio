@@ -2,6 +2,8 @@
 
 ### nice to have or try
 
+##### ISSUE with images
+
 - section better code
 - client validation with HTML5 form inputs?
 - better js code contact form
