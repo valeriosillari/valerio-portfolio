@@ -16,9 +16,9 @@ const images = cb => {
         gulpPlugin.imagemin(
           // Set options
           [
-            gulpPlugin.imagemin.gifsicle({
-              interlaced: true,
-            }),
+            // gulpPlugin.imagemin.gifsicle({
+            //   interlaced: true,
+            // }),
             gulpPlugin.imagemin.mozjpeg({
               progressive: true,
             }),
