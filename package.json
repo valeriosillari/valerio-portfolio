@@ -56,9 +56,9 @@
     "gulp": "^4.0.0",
     "gulp-autoprefixer": "^v6.0.0",
     "gulp-cache": "^v1.1.1",
-    "gulp-imagemin": "^v5.0.0",
+    "gulp-imagemin": "^7.1.0",
     "gulp-load-plugins": "^1.5.0",
-    "gulp-modernizr": "^3.2.1",
+    "gulp-modernizr": "^3.4.1",
     "gulp-nodemon": "^2.4.2",
     "gulp-postcss": "^8.0.0",
     "gulp-pug": "^4.0.1",
@@ -85,7 +85,7 @@
     "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-react": "^7.12.4",
     "prettier": "1.16.4",
-    "sass-lint": "^1.12.1",
-    "sass-lint-auto-fix": "^0.16.2"
+    "sass-lint": "^1.13.1",
+    "sass-lint-auto-fix": "^0.21.0"
   }
 }
