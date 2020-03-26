@@ -19,7 +19,7 @@ const images = cb => {
             gulpPlugin.imagemin.gifsicle({
               interlaced: true,
             }),
-            gulpPlugin.imagemin.jpegtran({
+            gulpPlugin.imagemin.mozjpeg({
               progressive: true,
             }),
             gulpPlugin.imagemin.optipng({
