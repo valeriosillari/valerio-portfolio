@@ -23,11 +23,9 @@
     "prettier": "prettier --write '**/*.{css,scss,js}'",
     "lint-js": "eslint src/**/*.js",
     "fix-js": "yarn prettier && eslint --fix src/**/*.js",
-    "lint-sass": "sass-lint -c -v -q",
-    "fix-sass": "sass-lint-auto-fix",
     "dev": "gulp serve",
     "build": "gulp build",
-    "now-build": "yarn lint-sass && yarn lint-js && gulp build"
+    "now-build": "yarn lint-js && gulp build"
   },
   "babel": {
     "presets": [
@@ -84,8 +82,6 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-react": "^7.19.0",
-    "prettier": "2.0.2",
-    "sass-lint": "^1.13.1",
-    "sass-lint-auto-fix": "^0.21.0"
+    "prettier": "2.0.2"
   }
 }
