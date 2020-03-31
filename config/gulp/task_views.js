@@ -5,7 +5,7 @@ import appVariables from '../variables/app_variables'
 // constant for Gulp Plugin
 const gulpPlugin = gulpLoadPlugins()
 
-const views = cb => {
+const views = (cb) => {
   return (
     gulp
       .src('./src/views/pages/**/*')

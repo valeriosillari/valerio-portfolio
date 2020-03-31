@@ -8,7 +8,7 @@ import appVariables from './../../config/variables/app_variables'
 // constant for Gulp Plugin
 const gulpPlugin = gulpLoadPlugins()
 
-const taskStylesSass = cb => {
+const taskStylesSass = (cb) => {
   // take original file
   return (
     gulp
