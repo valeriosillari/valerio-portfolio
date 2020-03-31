@@ -5,7 +5,7 @@ import appVariables from './../../config/variables/app_variables'
 // constant for Gulp Plugin
 const gulpPlugin = gulpLoadPlugins()
 
-const images = cb => {
+const images = (cb) => {
   gulp
     .src(appVariables.srcFileImages)
 

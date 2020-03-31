@@ -25,7 +25,7 @@ const $inputPrivacy = $(`.${classInputPrivacy}`)
 const $buttonContactSubmit = $(btnSubmitElement)
 
 // box feedback for each input (client validation)
-const feedbackInputMessageBox = messageText => {
+const feedbackInputMessageBox = (messageText) => {
   return `
     <div class='box-input-feedback ${messageBoxFeedbackServerJSClass} '>
       ${messageText}
@@ -71,7 +71,7 @@ const resetFeedbackStatus = () => {
   $(`.${messageBoxFeedbackServerJSClass}`).remove()
 }
 
-const isBtnSubmitDisabled = isBtnStatus => {
+const isBtnSubmitDisabled = (isBtnStatus) => {
   // set form DISABLED value option (it comes from function input).
   $buttonContactSubmit.prop('disabled', isBtnStatus)
 
@@ -96,7 +96,7 @@ const getFormInputsObject = () => {
   )
 
   // grab the value of each input
-  formInputList.forEach(item => {
+  formInputList.forEach((item) => {
     const $item = $(item)
 
     // checkbox: get status of each item (checkbox got different logic)
@@ -177,7 +177,7 @@ const validationClient = (name, email, message, privacy) => {
 }
 
 // TODO: set loop?
-const feedbackMessage = inputStatus => {
+const feedbackMessage = (inputStatus) => {
   let errorMessage
 
   // ==============================
@@ -257,7 +257,7 @@ const feedbackMessage = inputStatus => {
 }
 
 // TODO: : move up with validation function?
-const feedbackMessageInputs = userInputList => {
+const feedbackMessageInputs = (userInputList) => {
   if (userInputList.name === true) {
     feedbackMessage('isNameSuccess')
   } else if (userInputList.name === 'error') {
@@ -309,7 +309,7 @@ const startServerValidation = (
     },
   })
     // validation is done on server side, now we got a reponse.
-    .done(response => {
+    .done((response) => {
       if (response.validation === true) {
         // // at mail sent :
         // // 1) "slide up the form"
@@ -345,7 +345,7 @@ const startServerValidation = (
 
 // =======================
 // implementation at submit click ....
-$(document).on('click', btnSubmitElement, event => {
+$(document).on('click', btnSubmitElement, (event) => {
   // this will prevent the form default way (server loads submit page)
   event.preventDefault()
 
@@ -374,7 +374,7 @@ $(document).on('click', btnSubmitElement, event => {
   if (
     // it returns 'true' if all values are true.
     // https://stackoverflow.com/questions/17117712/how-to-know-if-all-javascript-object-values-are-true
-    Object.values(validationClientResponse).every(item => item === true)
+    Object.values(validationClientResponse).every((item) => item === true)
   ) {
     startServerValidation(
       formInputs.name,

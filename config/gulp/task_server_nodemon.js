@@ -3,7 +3,7 @@ import gulpLoadPlugins from 'gulp-load-plugins'
 // constant for Gulp Plugin
 const gulpPlugin = gulpLoadPlugins()
 
-const serverNodemon = cb => {
+const serverNodemon = (cb) => {
   const server = gulpPlugin.nodemon({
     // run nodemon with babel, so we can unleash ES6 syntax
     exec: 'babel-node',

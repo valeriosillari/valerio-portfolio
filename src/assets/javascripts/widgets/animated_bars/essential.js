@@ -9,11 +9,11 @@ const itemBarStartParentElement = '.js-section-2'
 const barItemClass = 'bar'
 
 if ($(itemBarStartParentElement)[0]) {
-  const barInitLoop = barList => {
+  const barInitLoop = (barList) => {
     // -------------------------------------------------
     // trigger bar animation
     setTimeout(() => {
-      barList.forEach(barItem => {
+      barList.forEach((barItem) => {
         const $currentBar = $(barItem)
         setTimeout(() => {
           $currentBar.css('width', $currentBar.attr('data-percent'))
@@ -30,7 +30,7 @@ if ($(itemBarStartParentElement)[0]) {
     triggerElement: itemBarStartParentElement,
   })
 
-    .on('enter', item => {
+    .on('enter', (item) => {
       // trigger a TweenMax.to tween
       TweenMax.to(
         // element with animation
