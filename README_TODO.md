@@ -1,6 +1,6 @@
 # TODO | Valerio Portfolio
 
-### nice to have or try
+### nice to have or try.
 
 - section better code
 - client validation with HTML5 form inputs?
