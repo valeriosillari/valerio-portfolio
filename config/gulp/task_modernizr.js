@@ -8,7 +8,7 @@ import appVariables from './../../config/variables/app_variables'
 // constant for Gulp Plugin
 const gulpPlugin = gulpLoadPlugins()
 
-const modernizr = cb => {
+const modernizr = (cb) => {
   gulp
     // inputs
     .src([appVariables.srcFileLayoutJavascript])

@@ -5,7 +5,7 @@ import appVariables from './../../config/variables/app_variables'
 // constant for Gulp Plugin
 const gulpPlugin = gulpLoadPlugins()
 
-const images = cb => {
+const images = (cb) => {
   gulp
     .src(appVariables.srcFileImages)
 
@@ -16,10 +16,11 @@ const images = cb => {
         gulpPlugin.imagemin(
           // Set options
           [
-            gulpPlugin.imagemin.gifsicle({
-              interlaced: true,
-            }),
-            gulpPlugin.imagemin.jpegtran({
+            // 26.03.2020: comment out for now. issue during deploy. but no GIF to take care, so ...
+            // gulpPlugin.imagemin.gifsicle({
+            //   interlaced: true,
+            // }),
+            gulpPlugin.imagemin.mozjpeg({
               progressive: true,
             }),
             gulpPlugin.imagemin.optipng({

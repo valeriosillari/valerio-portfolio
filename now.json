@@ -3,7 +3,6 @@
   "version": 2,
   "alias": ["valeriosillari.com", "www.valeriosillari.com"],
   "builds": [{ "src": "package.json", "use": "@now/static-build" }],
-  "regions": ["bru", "cdg1", "arn1"],
   "build": {
     "env": {
       "GOOGLE_ANALYTICS_KEY": "@valerio_portfolio_google_analytics_key"
