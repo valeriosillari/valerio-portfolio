@@ -7,7 +7,7 @@ import appVariables from './../../config/variables/app_variables'
 // constant for Gulp Plugin
 const gulpPlugin = gulpLoadPlugins()
 
-const scripts = cb => {
+const scripts = (cb) => {
   return (
     gulp
       .src(appVariables.srcFileLayoutJavascript)

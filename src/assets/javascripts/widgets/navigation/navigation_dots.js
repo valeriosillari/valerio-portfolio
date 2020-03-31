@@ -32,7 +32,7 @@ const delay = (() => {
 const collectSceneSection = () => {
   const arraySectionScenes = []
 
-  $section.each(thisSection => {
+  $section.each((thisSection) => {
     const currentSectionNumber = thisSection + 1
     const currentSectionClass = `${sectionClassJs}-${currentSectionNumber}`
     const $currentSection = $(currentSectionClass)
@@ -70,7 +70,7 @@ const setScrollMagicScenes = () => {
 
   // here we set the first trick. for each section we have (arraySectionScenes), we populate the array "activeScenes"
   // so magic scroll start working!!!
-  arraySectionScenes.forEach(arraySectionScene => {
+  arraySectionScenes.forEach((arraySectionScene) => {
     if (typeof arraySectionScene === 'function') {
       // add the new scene
       const arraySectionSceneItem = arraySectionScene()
@@ -96,7 +96,7 @@ const startNavDots = () => {
     delay(() => {
       // --- STEP 1: destroy ScrollMagic current data ---
       // destroy the scroll magic values (as HEIGHT/duration)
-      activeScenes.forEach(scene => {
+      activeScenes.forEach((scene) => {
         // make sure scene wasn't null
         if (scene) {
           // destroy active scene

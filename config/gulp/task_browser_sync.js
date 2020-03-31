@@ -4,7 +4,7 @@ import scripts from './task_scripts.js'
 import browserSync from 'browser-sync'
 import appVariables from './../../config/variables/app_variables'
 
-const startBrowserSync = cb => {
+const startBrowserSync = (cb) => {
   browserSync.init({
     // where we got the app running via nodemon | source
     proxy: `http://localhost:${appVariables.defaultAppPort}`,
