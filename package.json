@@ -65,7 +65,7 @@
     "gulp-uglify": "^v3.0.2",
     "headroom.js": "^0.9.4",
     "http-errors": "~1.6.2",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "lazysizes": "^4.1.7",
     "pug": "^2.0.3",
     "scrollmagic": "^2.0.6",
