@@ -2,9 +2,11 @@ import $ from 'jquery'
 
 const urlMailServerValidation =
   // mailer PROD
-  'https://express-contact-form.herokuapp.com/submit'
+  'https://express-contact-form.herokuapp.com'
 // mailer DEV
-// 'https://express-contact-form-develop.herokuapp.com/submit'
+// 'https://express-contact-form-develop.herokuapp.com'
+// mailer LOCAL HOST (dev)
+// 'http://localhost:8000'
 
 const btnSubmitElement = '.js-form-btn-submit'
 const buttonSubmitSendingClass = 'js-form-submit-sending'
@@ -298,7 +300,7 @@ const startServerValidation = (
   // send collected info/inputs to the server for validation via AJAX
   $.ajax({
     type: 'POST',
-    url: urlMailServerValidation,
+    url: `${urlMailServerValidation}/submit`,
     // data passed all as string values
     data: {
       name: nameString,
