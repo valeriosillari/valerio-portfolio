@@ -30,6 +30,14 @@ $ yarn build # build the app | Static Files
 
 Static files generated on 'dist' folder.
 
+## ENV Options
+
+You need to set some CONFIG VAR options locally and on Deploy Server for custom Plugins as Analytics.
+
+For detailed explanation on how dotenv work, checkout the [dotenv docs](https://github.com/motdotla/dotenv).
+
+- **ENV_VALERIO_PORTFOLIO_GOOGLE_ANALYTICS** : google analytics
+
 ## Technologies
 
 - [Node JS](https://nodejs.org/)
@@ -40,3 +48,16 @@ Static files generated on 'dist' folder.
 - [Sass](http://sass-lang.com/)
 - [Pug JS](https://pugjs.org/)
 - [ES Linter](https://eslint.org/)
+- [Prettier](https://prettier.io/)
+
+## TODO (nice to have or try)
+
+- section better code
+- client validation with HTML5 form inputs?
+- better js code contact form
+- images/logos in readme
+- modernizr logic on dev/reload | set workaround but each time script change also modernizr should be inside as required task
+- sticky footer? for error page
+- remove jQuery?
+- Gulp structure more granular and with separate tasks (looping)
+- purge css
