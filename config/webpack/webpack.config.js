@@ -28,8 +28,6 @@ module.exports = {
   plugins: [
     // inject dotEnv keys into js files via webpack
     new dotEnv({
-      // load this env file instead of the default one '.env' into root
-      path: path.resolve(appVariables.fileDotEnvKeys),
       // set true for having them on deploy server
       systemvars: true,
     }),

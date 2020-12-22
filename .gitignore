@@ -11,7 +11,7 @@ node_modules
 /src/assets/generated
 
 # Ignore ENV file with password keys (env dot)
-/config/env_variables/env_keys
+.env
 
 # Ignore DIST folder, where we set the final generated files for the website on DEVELOP and PROD Env
 /dist

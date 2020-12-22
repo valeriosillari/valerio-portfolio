@@ -1,14 +1,12 @@
 import dotenv from 'dotenv'
+// TODO: do we need it?
 import path from 'path'
 import express from 'express'
 import createError from 'http-errors'
 import routes from '../routes/routesList'
 import appVariables from '../config/variables/app_variables'
 
-// dotENV custom path keys file
-const dotenvKeys = dotenv.config({
-  path: appVariables.fileDotEnvKeys,
-})
+dotenv.config()
 
 const app = express()
 

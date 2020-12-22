@@ -13,9 +13,6 @@ const appVariables = {
   // local port for gulp browser sync
   servingAppPort: 9000,
 
-  // dotENV file
-  fileDotEnvKeys : './config/env_variables/env_keys',
-
   // =====================
   // Assets
 
