@@ -24,8 +24,7 @@
     "lint-js": "eslint src/**/*.js",
     "fix-js": "yarn prettier && eslint --fix src/**/*.js",
     "dev": "gulp serve",
-    "build": "gulp build",
-    "now-build": "yarn lint-js && gulp build"
+    "build": "gulp build"
   },
   "babel": {
     "presets": [
