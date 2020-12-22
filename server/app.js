@@ -1,6 +1,4 @@
 import dotenv from 'dotenv'
-// TODO: do we need it?
-import path from 'path'
 import express from 'express'
 import createError from 'http-errors'
 import routes from '../routes/routesList'
