@@ -29,7 +29,7 @@ module.exports = {
     // inject dotEnv keys into js files via webpack
     new Dotenv({
       // set true for having them on deploy server
-      systemvars: true,
+      // systemvars: true,
     }),
 
     // shimming logic
