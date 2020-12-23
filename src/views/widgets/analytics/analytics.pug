@@ -6,6 +6,11 @@ script(async, src=`https://www.googletagmanager.com/gtag/js?id=${googleAnalytics
 //- JS scrit anaylitics
 script.
   window.dataLayer = window.dataLayer || []
-  function gtag(){dataLayer.push(arguments)};
-  gtag('js', new Date());
-  gtag('config', '#{googleAnalyticsKey}');
+  function gtag(){dataLayer.push(arguments)}
+  gtag('js', new Date())
+
+  gtag('config', '#{googleAnalyticsKey}')
+
+p(style="border: 5px solid red;")
+  | heye
+  =googleAnalyticsKey
