@@ -1,5 +1,5 @@
 import webpack from 'webpack'
-import dotEnv from 'dotenv-webpack'
+import Dotenv from 'dotenv-webpack'
 import path from 'path'
 import pathJsAlias from './../variables/webpack_javascript_aliases'
 import appVariables from './../variables/app_variables'
@@ -27,7 +27,7 @@ module.exports = {
 
   plugins: [
     // inject dotEnv keys into js files via webpack
-    new dotEnv({
+    new Dotenv({
       // set true for having them on deploy server
       systemvars: true,
     }),
