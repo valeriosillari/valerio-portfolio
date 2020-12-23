@@ -3,15 +3,10 @@
 //- Global site tag (gtag.js) - Google Analytics
 script(async, src=`https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsKey}`)
 
-//- JS scrit anaylitics
+//- JS script analytics
 script.
   window.dataLayer = window.dataLayer || []
   function gtag(){dataLayer.push(arguments)}
   gtag('js', new Date())
 
   gtag('config', '#{googleAnalyticsKey}')
-
-p(style="border: 5px solid orange;")
-  | START
-  =googleAnalyticsKey
-  | END
