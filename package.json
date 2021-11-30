@@ -20,7 +20,8 @@
   ],
   "main": "./server/start",
   "scripts": {
-    "prettier": "prettier --write '**/*.{css,scss,js}'",
+    "prettier-check": "prettier --check '**/*.{css,scss,js,html,pug}'",
+    "prettier": "prettier --write '**/*.{css,scss,js,html,pug}'",
     "lint-js": "eslint src/**/*.js",
     "fix-js": "yarn prettier && eslint --fix src/**/*.js",
     "dev": "gulp serve",
