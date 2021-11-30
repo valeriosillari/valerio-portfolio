@@ -9,9 +9,6 @@
     "type": "git",
     "url": "https://github.com/valeriosillari/valerio-portfolio"
   },
-  "engines": {
-    "node": "12.x"
-  },
   "keywords": [
     "node",
     "express",
