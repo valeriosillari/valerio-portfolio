@@ -1,73 +1,45 @@
 //- the form
-form(
-  class='form js-form',
-  action='/submit',
-  method='post'
-)
-
+form.form.js-form(action='/submit', method='post')
   .form-group.js-form-group
-    label(
-      class='form-control-label',
-      for='name'
-    )
+    label.form-control-label(for='name')
       | Name
-    input(
-      class='form-control js-form-control js-name',
+    input#name.form-control.js-form-control.js-name(
       type='name',
-      id='name',
       name='name',
       placeholder='Your name here'
     )
 
   .form-group.js-form-group
-    label(
-      class='form-control-label',
-      for='email'
-    )
+    label.form-control-label(for='email')
       | Email
-    input(
-      class='form-control js-form-control js-email',
+    input#email.form-control.js-form-control.js-email(
       type='email',
-      id='email',
       name='email',
       placeholder='Your email here'
     )
 
   .form-group.js-form-group
-    label(class='form-control-label', for='message')
+    label.form-control-label(for='message')
       | Message
-    textarea(
-      class='form-control js-form-control js-message',
+    textarea#message.form-control.js-form-control.js-message(
       type='text',
-      id='message',
       name='message',
       rows='5',
       placeholder='Your message here'
     )
 
   .form-group.form-checkbox.js-form-group
-    input(
-      class='form-checkbox-input js-form-control js-privacy'
+    input#checkbox-privacy.form-checkbox-input.js-form-control.js-privacy(
       type='checkbox'
-      id='checkbox-privacy'
     )
 
-    label(
-      class='form-checkbox-label'
-      for='checkbox-privacy'
-    )
+    label.form-checkbox-label(for='checkbox-privacy')
       | By submitting you agree processing your data in accordance to the
       |
-      a.link(
-        href='/policy'
-        title='Privacy Policy'
-      )
+      a.link(href='/policy', title='Privacy Policy')
         | Privacy Policy
 
-  button(
-    type='submit',
-    class='btn btn-block btn-form-submit js-form-btn-submit'
-  )
+  button.btn.btn-block.btn-form-submit.js-form-btn-submit(type='submit')
     .text-default
       | Send message
     .text-sending

@@ -1,68 +1,59 @@
-- itemHome      = `Home`
-- itemAbout     = `About`
+- itemHome = `Home`
+- itemAbout = `About`
 - itemPortfolio = `Portfolio`
-- itemContacts  = `Contacts`
-
+- itemContacts = `Contacts`
 
 nav.navigation.js-headroom
-
   //- mobile logo (mobile only)
   span.nav-logo.js-scroll-to(data-scrollTo='#section-1')
     //- logo minimal
     include ../../components/_logo_minimal.pug
-
 
   //- menu button (mobile only)
   buttton.nav-toggle-button
     span.text
       | menu btn
 
-
   //- nav link area
   .nav-menu.js-nav-menu
-
     //- navigation nav links with scroll logic
     ul.dot-items
-
       li.dot-item
-        a.dot-item-link.js-dot-item.js-scroll-to.js-dot-item-1#section-dot-1(
+        a#section-dot-1.dot-item-link.js-dot-item.js-scroll-to.js-dot-item-1(
           href='#section-1',
-          data-scrollTo='#section-1'
-          title=itemHome
+          data-scrollTo='#section-1',
+          title=itemHome,
           alt=itemHome
         )
           span.text
-            =itemHome
-
+            = itemHome
 
       li.dot-item
-        a.dot-item-link.js-dot-item.js-scroll-to.js-dot-item-2#section-dot-2(
+        a#section-dot-2.dot-item-link.js-dot-item.js-scroll-to.js-dot-item-2(
           href='#section-2',
-          data-scrollTo='#section-2'
-          title=itemAbout
+          data-scrollTo='#section-2',
+          title=itemAbout,
           alt=itemAbout
         )
           span.text
-            =itemAbout
-
+            = itemAbout
 
       li.dot-item
-        a.dot-item-link.js-dot-item.js-scroll-to.js-dot-item-3#section-dot-3(
-          href=`#section-3`,
-          data-scrollTo='#section-3'
-          title=itemPortfolio
+        a#section-dot-3.dot-item-link.js-dot-item.js-scroll-to.js-dot-item-3(
+          href='#section-3',
+          data-scrollTo='#section-3',
+          title=itemPortfolio,
           alt=itemPortfolio
         )
           span.text
-            =itemPortfolio
-
+            = itemPortfolio
 
       li.dot-item
-        a.dot-item-link.js-dot-item.js-scroll-to.js-dot-item-4#section-dot-4(
-          href=`#section-4`,
-          data-scrollTo='#section-4'
-          title=itemContacts
+        a#section-dot-4.dot-item-link.js-dot-item.js-scroll-to.js-dot-item-4(
+          href='#section-4',
+          data-scrollTo='#section-4',
+          title=itemContacts,
           alt=itemContacts
         )
           span.text
-            =itemContacts
+            = itemContacts

@@ -1,12 +1,17 @@
 - googleAnalyticsKey = process.env.ENV_VALERIO_PORTFOLIO_GOOGLE_ANALYTICS
 
 //- Global site tag (gtag.js) - Google Analytics
-script(async, src=`https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsKey}`)
+script(
+  async,
+  src=`https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsKey}`
+)
 
 //- JS script analytics
 script.
-  window.dataLayer = window.dataLayer || []
-  function gtag(){dataLayer.push(arguments)}
-  gtag('js', new Date())
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
 
-  gtag('config', '#{googleAnalyticsKey}')
+  gtag('config', '#{googleAnalyticsKey}');

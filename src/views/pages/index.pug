@@ -2,25 +2,21 @@ extends ../layouts/layout_default
 
 block pageVariables
   - isPageHome = true
-  
-block content
 
+block content
   //- todo: too complicatd! set easier !!!
 
   //- set mixins
   mixin sectionMixins(itemNumber)
-
     //- mixins : set variables
-    - setClassSelector  = `section-${itemNumber}`
-    - setClasses        = `section ${setClassSelector} js-section js-${setClassSelector}`
-    - setId             = `${setClassSelector}`
-    - setContentClass   = `content content-${itemNumber}`
+    - setClassSelector = `section-${itemNumber}`
+    - setClasses = `section ${setClassSelector} js-section js-${setClassSelector}`
+    - setId = `${setClassSelector}`
+    - setContentClass = `content content-${itemNumber}`
 
     //- mixins : set markup
     section(class=setClasses, id=setId)
-    
       .container
-
         //- section 01
         if itemNumber == 1
           include ../widgets/sections/_section_01.pug
@@ -36,7 +32,6 @@ block content
         //- section 04
         else if itemNumber == 4
           include ../widgets/sections/_section_04.pug
-
 
   //- set markup with a loop and a mixins
   //- set loop

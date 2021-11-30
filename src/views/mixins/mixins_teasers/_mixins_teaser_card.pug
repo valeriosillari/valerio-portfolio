@@ -1,44 +1,38 @@
 mixin teaserCard(titleText, descriptionText, detailsText, linkPath, thumbName, isFancyBoxDisabled)
-
   //- just a link to external website
   if isFancyBoxDisabled
-
     //- markup
-    a(class='teaser', href=linkPath, title=titleText, target='_blank')
+    a.teaser(href=linkPath, title=titleText, target='_blank')
       //- thumb
       figure
         +lazyLoadThumb(`portfolio/thumb_small/${thumbName}`, 'placeholder/placeholder_440x280.png', titleText)
-      
+
       //- content text
       .content
-      
         .details
-          =detailsText
-      
+          = detailsText
+
         h4.title
-          =titleText
-      
+          = titleText
+
         .description.small
-          =descriptionText
+          = descriptionText
 
   //- overlay with fancybox
   else
-
     //- markup
-    a(class='teaser', href=linkPath, title=titleText, data-fancybox='portfolio')
-    
+    a.teaser(href=linkPath, title=titleText, data-fancybox='portfolio')
       //- thumb
       figure
         +lazyLoadThumb(`portfolio/thumb_small/${thumbName}`, 'placeholder/placeholder_440x280.png', titleText)
-      
+
       //- content text
       .content
-      
         .details
-          =detailsText
-      
+          = detailsText
+
         h4.title
-          =titleText
-      
+          = titleText
+
         .description.small
-          =descriptionText
+          = descriptionText
