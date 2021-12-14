@@ -1,4 +1,4 @@
-mixin teaserCard(titleText, descriptionText, detailsText, linkPath, thumbName, isFancyBoxDisabled)
+mixin teaserCard(titleText, descriptionText, detailsText, clientText, linkPath, thumbName, isFancyBoxDisabled)
   //- just a link to external website
   if isFancyBoxDisabled
     //- markup
@@ -15,8 +15,13 @@ mixin teaserCard(titleText, descriptionText, detailsText, linkPath, thumbName, i
         h4.title
           = titleText
 
-        .description.small
+        .description
           = descriptionText
+
+        .text-client
+          | Project for:
+          |
+          = clientText
 
   //- overlay with fancybox
   else
@@ -36,3 +41,8 @@ mixin teaserCard(titleText, descriptionText, detailsText, linkPath, thumbName, i
 
         .description.small
           = descriptionText
+
+        .text-client.small
+          | Project for:
+          |
+          = clientText
