@@ -8,7 +8,7 @@ const appVariables = {
   // Server
 
   // local port for nodemon/server
-  defaultAppPort: 5000,
+  defaultAppPort: 3000,
 
   // local port for gulp browser sync
   servingAppPort: 9000,
