@@ -38,6 +38,7 @@ For detailed explanation on how Nuxt works, checkout the [Nuxt Official Website]
 -   fade effects at scroll down (sections)
 -   type writing effect
 -   update favicons design: from old (drops) to new (new shape)
+-   check share options (FG og image logo and twitter card)
 
 ## NICE TO HAVE:
 
