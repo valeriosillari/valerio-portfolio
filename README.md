@@ -45,5 +45,6 @@ For detailed explanation on how Nuxt works, checkout the [Nuxt Official Website]
 -   about section: better design, better links?
 -   button go to top (footer?)
 -   ES linter?
+-   css style lint?
 -   nuxt-image plugin (image on assets folder)
 -   headless CMS
