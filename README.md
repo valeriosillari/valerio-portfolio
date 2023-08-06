@@ -1,63 +1,50 @@
-# Valerio Portfolio
+# Valerio Sillari Portfolio
 
-My Portfolio Website as Node Application.
+#### My Personal Website as Portfolio.
 
-## Installation
+[valeriosillari.com](https://valeriosillari.com/)
 
-Make sure you have [Node.js](http://nodejs.org/) installed.
+## BASIC CLI COMMANDS
 
-```
-$ git clone git@github.com:valeriosillari/valerio-portfolio.git # clone repo
+```bash
 
-$ cd valerio-portolio # enter in the application folder
+# install dependencies
+$ yarn install
 
-$ yarn # install packages
-```
+# serve with hot reload at localhost:3000 (DEV Mode)
+$ yarn dev
 
-## Dev Mode
+# generate built project (Prod SERVER)
+$ yarn build
 
-```
-$ yarn dev # start the app | Develop mode
-```
-
-Your app should now be running on [localhost:9000](http://localhost:9000/).
-
-## Production Mode | Static
+# generate static project (Prod STATIC)
+$ yarn generate
 
 ```
-$ yarn build # build the app | Static Files
-```
 
-Static files generated on 'dist' folder.
+Based on **Nuxt**.
 
-## ENV Options
+For detailed explanation on how Nuxt works, checkout the [Nuxt Official Website](https://nuxt.com/).
 
-You need to set some CONFIG VAR options locally and on Deploy Server for custom Plugins as Analytics.
+## TECH STACK
 
-For detailed explanation on how dotenv work, checkout the [dotenv docs](https://github.com/motdotla/dotenv).
+-   [Nuxt](https://nuxt.com/)
+-   [Vue](https://vuejs.org/)
+-   [Sass](https://sass-lang.com/)
+-   [Prettier](https://prettier.io/)
 
-- **ENV_VALERIO_PORTFOLIO_GOOGLE_ANALYTICS** : google analytics
+## TODOs:
 
-## Technologies
+-   fade effects at scroll down (sections)
+-   type writing effect
+-   update favicons design: from old (drops) to new (new shape)
 
-- [Node JS](https://nodejs.org/)
-- [Express](http://expressjs.com/)
-- [Babel JS](https://babeljs.io/)
-- [Gulp JS](http://gulpjs.com/)
-- [Web Pack](https://webpack.js.org/)
-- [Sass](http://sass-lang.com/)
-- [Pug JS](https://pugjs.org/)
-- [ES Linter](https://eslint.org/)
-- [Prettier](https://prettier.io/)
+## NICE TO HAVE:
 
-## TODO (nice to have or try)
-
-- section better code
-- client validation with HTML5 form inputs?
-- better js code contact form
-- images/logos in readme
-- modernizr logic on dev/reload | set workaround but each time script change also modernizr should be inside as required task
-- sticky footer? for error page
-- remove jQuery?
-- Gulp structure more granular and with separate tasks (looping)
-- purge css
+-   splashscreen
+-   about section: better design, better links?
+-   button go to top (footer?)
+-   ES linter?
+-   css style lint?
+-   nuxt-image plugin (image on assets folder)
+-   headless CMS

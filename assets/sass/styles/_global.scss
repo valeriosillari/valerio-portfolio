@@ -1,0 +1,16 @@
+// Set global logic here.
+// But first check if yiu can overwrite bootstrap global rules
+
+// text selection
+::-moz-selection {
+    color: $color_text_selection_text;
+    background: $color_text_selection_bg;
+}
+::selection {
+    color: $color_text_selection_text;
+    background: $color_text_selection_bg;
+}
+
+.root-container {
+    min-height: 100vh;
+}

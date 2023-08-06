@@ -1,7 +1,11 @@
-# Files to ignore / not to change by Prettier
-# TODO: possible to set this info NOT in separate file, but in prettier config file?
+# dist file at generate
+node_modules/
 
-config/variables
-src/assets/generated
-src/assets/javascripts/widgets/analytics
-dist
+# nuxt dev folder
+.nuxt/
+
+# dist file at generate
+dist/
+
+# jest coverage folder
+coverage/

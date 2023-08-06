@@ -1,0 +1,99 @@
+// ===== Fonts ======
+$font-family-base: 'Titillium Web', 'Helvetica Neue', Arial, sans-serif;
+
+// ===== Typography (bootstrap overwrite) ======
+
+$h1-font-size: $font-size-base * 4;
+$h2-font-size: $font-size-base * 2.5;
+$h3-font-size: $font-size-base * 2;
+$h4-font-size: $font-size-base * 1.75;
+$h5-font-size: $font-size-base * 1.5;
+$h6-font-size: $font-size-base * 1.25;
+
+// ===== Spaces ======
+$space_00: 0;
+$space_01: 5px;
+$space_02: 10px;
+$space_03: 15px;
+$space_04: 30px;
+$space_05: 45px;
+$space_06: 60px;
+$space_07: 90px;
+$space_08: 120px;
+
+// ===== Breakpoints (breakpoint-sass) ======
+$breakpoint_xs: 375px;
+$breakpoint_sm: 576px;
+$breakpoint_md: 768px;
+$breakpoint_lg: 992px;
+$breakpoint_xl: 1200px;
+$breakpoint_xxl: 1400px;
+
+// ===== Color Palette ======
+$color_white: #fff;
+$color_black: #000;
+$color_transparent: transparent;
+
+$color_pattern_01: #4ab8cf;
+$color_pattern_02: #103354;
+$color_pattern_03: #0c263f;
+$color_pattern_04: #081929;
+$color_pattern_05: #041114;
+$color_pattern_06: #505050;
+$color_pattern_07: #8c8c99;
+$color_pattern_08: #2d4a50;
+$color_pattern_09: #868790;
+$color_pattern_10: #c4c6cf;
+
+$color_pattern_11: #de4e68;
+$color_pattern_12: #d0d035;
+$color_pattern_13: orange;
+
+// ===== General ======
+
+$body-color: $color_white; // >> bootstrap var overwrite
+$body-bg: $color_pattern_04; // >> bootstrap var overwrite
+
+$link-color: $color_pattern_10;
+$link-hover-color: $color_white;
+
+$color_text_selection_bg: $color_pattern_01;
+$color_text_selection_text: $color_white;
+
+// ===== Components ======
+
+// button link
+$color_btn_text: $link-color;
+$color_btn_border: $link-color;
+$color_btn_text_hvr: $link-hover-color;
+$color_btn_border_hvr: $link-hover-color;
+
+// footer
+$color_footer_bg: $color_pattern_05;
+$color_footer_text: $color_pattern_06;
+$color_footer_link: $color_pattern_06;
+$color_footer_link_active: $color_pattern_07;
+$color_footer_link_hvr: $color_white;
+
+// Section - start
+$color_section_start_bg: $color_pattern_02;
+$color_section_start_text: $color_white;
+
+// Section - about
+$color_section_about_bg: $color_pattern_03;
+$color_section_about_text: $color_white;
+
+$color_section_about_link: $link-color;
+
+$color_section_about_link_projects_hvr: $color_pattern_11;
+$color_section_about_link_side_projects_hvr: $color_pattern_12;
+$color_section_about_link_current_work_hvr: $color_pattern_13;
+
+// Section - contact
+$color_section_contact_bg: $body-bg;
+$color_section_contact_text: $color_white;
+$color_section_contact_link: $link-color;
+$color_section_contact_link_hvr: $color_pattern_01;
+
+// Error page
+$color_page_error_image_border: $color_pattern_08;
