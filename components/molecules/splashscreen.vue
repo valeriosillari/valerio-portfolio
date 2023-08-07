@@ -16,7 +16,7 @@ const root = ref(null)
 const isSplashscreenActive = ref(true)
 
 const removeFadeOut = (el, speed) => {
-    const seconds = speed / 1000
+    var seconds = speed / 1000
 
     el.style.transition = 'opacity ' + seconds + 's ease'
     el.style.opacity = 0
