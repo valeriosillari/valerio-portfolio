@@ -16,13 +16,14 @@ const root = ref(null)
 const isSplashscreenActive = ref(true)
 
 const removeFadeOut = (el, speed) => {
-    var seconds = speed / 1000
+    const seconds = speed / 1000
 
     el.style.transition = 'opacity ' + seconds + 's ease'
-
     el.style.opacity = 0
 
+    // remove from dom
     setTimeout(() => {
+        // TODO: remove on vue way with unmounted
         el.parentNode.removeChild(el)
     }, speed)
 }
