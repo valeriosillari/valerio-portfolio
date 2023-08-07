@@ -1,7 +1,10 @@
-<!-- https://javascript.plainenglish.io/show-a-loading-spinner-in-nuxt-js-7a5ad0537ebf -->
+<!--
+    Insiration:
+    https://javascript.plainenglish.io/show-a-loading-spinner-in-nuxt-js-7a5ad0537ebf
+-->
 
 <template>
-    <div class="splash-screen" v-if="formDataReady">
+    <div class="splash-screen" v-if="isSplashscreenActive">
         <div class="spinner-wrapper">
             <div class="spinner"></div>
         </div>
@@ -9,10 +12,10 @@
 </template>
 
 <script setup>
-let formDataReady = ref(true)
+let isSplashscreenActive = ref(true)
 
 onMounted(() => {
-    formDataReady.value = false
+    isSplashscreenActive.value = false
 })
 </script>
 
