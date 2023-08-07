@@ -4,7 +4,7 @@
 -->
 
 <template>
-    <div class="b-splashscreen" ref="root">
+    <div class="b-splashscreen" ref="root" v-if="isSplashscreenActive">
         <div class="spinner-wrapper">
             <div class="spinner" />
         </div>
@@ -21,15 +21,13 @@ const removeFadeOut = (el, speed) => {
     el.style.transition = 'opacity ' + seconds + 's ease'
     el.style.opacity = 0
 
-    // remove from dom
+    // remove component itself when fade completed (vue IF logic)
     setTimeout(() => {
-        // TODO: remove on vue way with unmounted
-        el.parentNode.removeChild(el)
+        isSplashscreenActive.value = false
     }, speed)
 }
 
 onMounted(() => {
-    isSplashscreenActive.value = false
     removeFadeOut(root.value, 1500)
 })
 </script>
