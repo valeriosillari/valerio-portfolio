@@ -1,4 +1,6 @@
 <template>
+    <MoleculesSplashscreen />
+
     <NuxtPage class="root-container" />
 
     <OrganismsFooter />
