@@ -6,7 +6,7 @@
 <template>
     <div class="b-splash-screen" v-if="isSplashscreenActive">
         <div class="spinner-wrapper">
-            <div class="spinner"></div>
+            <div class="spinner" />
         </div>
     </div>
 </template>
@@ -21,7 +21,7 @@ onMounted(() => {
 
 <style lang="scss">
 .b-splash-screen {
-    background: #f2f0ee;
+    background: $color_splashscreen_bg;
     width: 100vw;
     height: 100vh;
     position: fixed;
@@ -36,10 +36,17 @@ onMounted(() => {
         .spinner {
             width: 80px;
             height: 80px;
-            margin: 100px auto;
-            background-color: #e45447;
-            border-radius: 100%;
-            animation: sk-scaleout 1s infinite ease-in-out;
+            margin: auto;
+            background-color: $color_splashscreen_spinner;
+            clip-path: polygon(
+                0% 50%,
+                25% 0%,
+                75% 0%,
+                100% 50%,
+                75% 100%,
+                25% 100%
+            );
+            animation: sk-scaleout 2s infinite ease-in-out;
         }
     }
 }
