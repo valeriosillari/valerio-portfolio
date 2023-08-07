@@ -4,7 +4,7 @@
 -->
 
 <template>
-    <div class="b-splash-screen" v-if="isSplashscreenActive">
+    <div class="b-splashscreen" v-if="isSplashscreenActive">
         <div class="spinner-wrapper">
             <div class="spinner" />
         </div>
@@ -20,7 +20,7 @@ onMounted(() => {
 </script>
 
 <style lang="scss">
-.b-splash-screen {
+.b-splashscreen {
     background: $color_splashscreen_bg;
     width: 100vw;
     height: 100vh;
@@ -46,12 +46,12 @@ onMounted(() => {
                 75% 100%,
                 25% 100%
             );
-            animation: sk-scaleout 2s infinite ease-in-out;
+            animation: animation-splashscreen 2s infinite ease-in-out;
         }
     }
 }
 
-@keyframes sk-scaleout {
+@keyframes animation-splashscreen {
     0% {
         -webkit-transform: scale(0);
         transform: scale(0);
