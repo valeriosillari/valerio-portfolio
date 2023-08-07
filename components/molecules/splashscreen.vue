@@ -4,7 +4,7 @@
 -->
 
 <template>
-    <div class="b-splashscreen">
+    <div class="b-splashscreen" ref="root">
         <div class="spinner-wrapper">
             <div class="spinner" />
         </div>
@@ -12,26 +12,24 @@
 </template>
 
 <script setup>
-let isSplashscreenActive = ref(true)
+const root = ref(null)
+const isSplashscreenActive = ref(true)
 
 const removeFadeOut = (el, speed) => {
-    console.log('======= removeFadeOut ======')
-
     var seconds = speed / 1000
 
-    el[0].style.transition = 'opacity ' + seconds + 's ease'
+    el.style.transition = 'opacity ' + seconds + 's ease'
 
-    el[0].style.opacity = 0
+    el.style.opacity = 0
 
     setTimeout(() => {
-        el[0].parentNode.removeChild(el[0])
+        el.parentNode.removeChild(el)
     }, speed)
 }
 
 onMounted(() => {
     isSplashscreenActive.value = false
-
-    removeFadeOut(document.getElementsByClassName('b-splashscreen'), 1500)
+    removeFadeOut(root.value, 1500)
 })
 </script>
 
