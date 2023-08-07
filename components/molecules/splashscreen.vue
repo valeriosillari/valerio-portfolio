@@ -38,14 +38,7 @@ onMounted(() => {
             height: 80px;
             margin: auto;
             background-color: $color_splashscreen_spinner;
-            clip-path: polygon(
-                0% 50%,
-                25% 0%,
-                75% 0%,
-                100% 50%,
-                75% 100%,
-                25% 100%
-            );
+            clip-path: $shape_clip_path;
             animation: animation-splashscreen 2s infinite ease-in-out;
         }
     }

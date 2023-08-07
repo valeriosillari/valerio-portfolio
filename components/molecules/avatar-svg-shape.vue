@@ -26,7 +26,7 @@
     width: 10rem;
     height: 8.660254037rem;
     box-sizing: border-box;
-    clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+    clip-path: $shape_clip_path;
 
     .avatar-svg-shape-container {
         position: absolute;
@@ -40,14 +40,7 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            clip-path: polygon(
-                0% 50%,
-                25% 0%,
-                75% 0%,
-                100% 50%,
-                75% 100%,
-                25% 100%
-            );
+            clip-path: $shape_clip_path;
         }
     }
 }

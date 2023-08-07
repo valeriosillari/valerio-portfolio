@@ -29,6 +29,10 @@ $breakpoint_lg: 992px;
 $breakpoint_xl: 1200px;
 $breakpoint_xxl: 1400px;
 
+// ===== Shape css (exagon) ======
+
+$shape_clip_path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+
 // ===== Color Palette ======
 $color_white: #fff;
 $color_black: #000;
