@@ -4,7 +4,6 @@
             <h1>{{ props.pageTitle }}.</h1>
 
             <h2>404</h2>
-            >
 
             <AtomsImage
                 :classnames="'is-image-error'"
