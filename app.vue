@@ -1,5 +1,5 @@
 <template>
-    <MoleculesSplashscreen />
+    <MoleculesSplashscreen v-if="formDataReady" />
 
     <NuxtPage class="root-container" />
 
@@ -18,3 +18,11 @@
     filter: blur(1rem);
 }
 </style>
+
+<script setup>
+let formDataReady = ref(true)
+
+onMounted(() => {
+    formDataReady.value = false
+})
+</script>
