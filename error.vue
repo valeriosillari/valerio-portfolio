@@ -1,4 +1,6 @@
 <template>
+    <MoleculesSplashscreen />
+
     <div class="root-container b-page-error">
         <div class="container">
             <h1>{{ props.pageTitle }}.</h1>

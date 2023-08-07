@@ -1,12 +1,20 @@
 <!-- https://javascript.plainenglish.io/show-a-loading-spinner-in-nuxt-js-7a5ad0537ebf -->
 
 <template>
-    <div class="splash-screen">
+    <div class="splash-screen" v-if="formDataReady">
         <div class="spinner-wrapper">
             <div class="spinner"></div>
         </div>
     </div>
 </template>
+
+<script setup>
+let formDataReady = ref(true)
+
+onMounted(() => {
+    formDataReady.value = false
+})
+</script>
 
 <style lang="scss">
 .splash-screen {
