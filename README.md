@@ -37,12 +37,11 @@ For detailed explanation on how Nuxt works, checkout the [Nuxt Official Website]
 
 -   fade effects at scroll down (sections)
 -   type writing effect
--   update favicons design: from old (drops) to new (new shape)
--   check share options (FG og image logo and twitter card)
+-   no js fallback?
+-   update favicons design: from old (drops) to new (new shape) >> also social OG images
 
 ## NICE TO HAVE:
 
--   splashscreen
 -   about section: better design, better links?
 -   button go to top (footer?)
 -   ES linter?
