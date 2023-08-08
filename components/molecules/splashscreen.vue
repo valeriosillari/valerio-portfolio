@@ -1,5 +1,5 @@
 <!--
-    Insiration:
+    Inspiration:
     https://javascript.plainenglish.io/show-a-loading-spinner-in-nuxt-js-7a5ad0537ebf
 -->
 
