@@ -33,12 +33,15 @@ onMounted(() => {
 </script>
 
 <style lang="scss">
+// TODO: move me to vars
+$timing_hide_no_js: 7s;
+
 .b-splashscreen {
     background: $color_splashscreen_bg;
     width: 100vw;
     height: 100vh;
     position: fixed;
-    z-index: 50;
+    z-index: 200;
 
     .spinner-wrapper {
         position: absolute;
@@ -55,6 +58,13 @@ onMounted(() => {
             animation: animation-splashscreen 2s infinite ease-in-out;
         }
     }
+
+    // remove splashscreen after several seconds if browser has no JS enabled
+    .no-js & {
+        animation: cssAnimationHideElement 0s ease-in $timing_hide_no_js
+            forwards;
+        animation-fill-mode: forwards;
+    }
 }
 
 @keyframes animation-splashscreen {
@@ -66,6 +76,14 @@ onMounted(() => {
         -webkit-transform: scale(1);
         transform: scale(1);
         opacity: 0;
+    }
+}
+
+@keyframes cssAnimationHideElement {
+    to {
+        width: 0;
+        height: 0;
+        overflow: hidden;
     }
 }
 </style>

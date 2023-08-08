@@ -1,4 +1,6 @@
 <template>
+    <MoleculesNoJsFallback />
+
     <MoleculesSplashscreen />
 
     <NuxtPage class="root-container" />
