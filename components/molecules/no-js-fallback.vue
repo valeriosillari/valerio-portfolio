@@ -1,25 +1,47 @@
 <template>
     <div class="b-no-js-fallback">
-        Your browser does not support JavaScript!
+        <span class="no-js-fallback-title">
+            Your browser does not support JavaScript.
+        </span>
+
+        <span class="no-js-fallback-text">
+            Please enable it or get more info
+            <a
+                href="https://www.enable-javascript.com/"
+                target="blank"
+                class="no-js-fallback-link"
+            >
+                here </a
+            >.
+        </span>
     </div>
 </template>
 
 <style lang="scss">
 .b-no-js-fallback {
-    background-color: red;
-    color: white;
-    font-size: 24px;
-    line-height: 1.2rem;
-    padding: 30px;
+    background-color: $color_no_js_bg;
+    color: $color_no_js_text;
+    padding: $space_03;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 100;
     display: none;
+    text-align: center;
+
+    .no-js-fallback-title {
+        // TODO: set var for text font values
+        font-size: 24px;
+        line-height: 1.2;
+        display: block;
+        padding-bottom: $space_02;
+    }
 
     .no-js & {
         display: block;
     }
 }
 </style>
+
+https://www.enable-javascript.com/
