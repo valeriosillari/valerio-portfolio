@@ -9,10 +9,9 @@
 </template>
 
 <script setup>
+import removeNoJsClass from '~/utils/modernizr-set-no-js-class'
+
 onMounted(() => {
-    // remove component itself when fade completed (vue IF logic)
-    setTimeout(() => {
-        document.documentElement.classList.remove('no-js')
-    }, 50)
+    removeNoJsClass()
 })
 </script>

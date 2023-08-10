@@ -27,6 +27,8 @@
 </template>
 
 <script setup lang="ts">
+import removeNoJsClass from '~/utils/modernizr-set-no-js-class'
+
 const runtimeConfig = useRuntimeConfig()
 
 const props = defineProps({
@@ -47,10 +49,7 @@ useHead({
 })
 
 onMounted(() => {
-    // remove component itself when fade completed (vue IF logic)
-    setTimeout(() => {
-        document.documentElement.classList.remove('no-js')
-    }, 50)
+    removeNoJsClass()
 })
 </script>
 
