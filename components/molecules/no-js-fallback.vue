@@ -22,9 +22,6 @@
     background-color: $color_no_js_bg;
     color: $color_no_js_text;
     padding: $space_03;
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     z-index: 100;
     display: none;
