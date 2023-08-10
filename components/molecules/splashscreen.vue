@@ -28,7 +28,7 @@ const removeFadeOut = (el, speed) => {
 }
 
 onMounted(() => {
-    removeFadeOut(root.value, 1250)
+    removeFadeOut(root.value, 1500)
 })
 </script>
 
