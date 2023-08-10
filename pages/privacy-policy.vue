@@ -93,8 +93,6 @@
 </template>
 
 <script setup lang="ts">
-import removeNoJsClass from '~/utils/modernizr-set-no-js-class'
-
 const runtimeConfig = useRuntimeConfig()
 
 const props = defineProps({
@@ -115,7 +113,7 @@ useHead({
 })
 
 onMounted(() => {
-    removeNoJsClass()
+    utilsRemoveNoJsClass()
 })
 </script>
 

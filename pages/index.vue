@@ -9,9 +9,7 @@
 </template>
 
 <script setup>
-import removeNoJsClass from '~/utils/modernizr-set-no-js-class'
-
 onMounted(() => {
-    removeNoJsClass()
+    utilsRemoveNoJsClass()
 })
 </script>
