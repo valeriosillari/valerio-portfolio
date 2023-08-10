@@ -38,7 +38,7 @@ onMounted(() => {
     width: 100vw;
     height: 100vh;
     position: fixed;
-    z-index: 200;
+    z-index: $z_index_02;
     top: 0;
 
     .spinner-wrapper {
