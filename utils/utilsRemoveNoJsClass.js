@@ -5,6 +5,7 @@ const utilsRemoveNoJsClass = () => {
     const runtimeConfig = useRuntimeConfig()
 
     // remove component itself when fade completed (vue IF logic)
+    // you need silly timeout otherwise it seems no to work (mounted is too fast?)
     setTimeout(() => {
         document.documentElement.classList.remove(
             runtimeConfig.public.htmlNoJsClass
