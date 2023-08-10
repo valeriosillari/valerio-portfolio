@@ -28,14 +28,11 @@ const removeFadeOut = (el, speed) => {
 }
 
 onMounted(() => {
-    removeFadeOut(root.value, 1500)
+    removeFadeOut(root.value, 1250)
 })
 </script>
 
 <style lang="scss">
-// TODO: move me to vars
-$timing_hide_no_js: 7s;
-
 .b-splashscreen {
     background: $color_splashscreen_bg;
     width: 100vw;
