@@ -7,9 +7,3 @@
         <OrganismsSectionsSectionContact />
     </div>
 </template>
-
-<script setup>
-onMounted(() => {
-    utilsRemoveNoJsClass()
-})
-</script>

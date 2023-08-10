@@ -47,7 +47,7 @@ export default defineNuxtConfig({
             htmlAttrs: {
                 lang: 'en',
                 // no js as for Modernizr. remove later by the application
-                class: 'no-js',
+                class: 'HEY no-js YO',
             },
 
             title: headTitle,
