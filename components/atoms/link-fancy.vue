@@ -1,3 +1,4 @@
+<!-- TODO: blank is optional and true by default -->
 <template>
     <a
         :class="['b-link-fancy', props.classnames]"
