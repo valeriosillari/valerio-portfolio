@@ -35,9 +35,8 @@ For detailed explanation on how Nuxt works, checkout the [Nuxt Official Website]
 
 ## TODOs:
 
--   fade effects at scroll down (sections)
 -   type writing effect
--   no js fallback?
+-   fade effects at scroll down (sections)
 -   update favicons design: from old (drops) to new (new shape) >> also social OG images
 
 ## NICE TO HAVE:
