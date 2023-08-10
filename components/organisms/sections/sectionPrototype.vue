@@ -45,25 +45,37 @@ const props = defineProps({
         .is-section-about-link-project,
         .is-section-about-link-project-side,
         .is-section-about-link-work {
-            color: $color_section_about_link;
+            display: inline;
+            color: white;
+            background-repeat: no-repeat;
+            transition: background-size 500ms ease-in-out;
+            background-position: left;
+            background-size: 0% 100%;
+
+            &:hover {
+                background-size: 100% 100%;
+            }
         }
 
         .is-section-about-link-project {
-            &:hover {
-                color: $color_section_about_link_projects_hvr;
-            }
+            background-image: linear-gradient(
+                $color_section_about_link_projects_hvr,
+                $color_section_about_link_projects_hvr
+            );
         }
 
         .is-section-about-link-project-side {
-            &:hover {
-                color: $color_section_about_link_side_projects_hvr;
-            }
+            background-image: linear-gradient(
+                $color_section_about_link_side_projects_hvr,
+                $color_section_about_link_side_projects_hvr
+            );
         }
 
         .is-section-about-link-work {
-            &:hover {
-                color: $color_section_about_link_current_work_hvr;
-            }
+            background-image: linear-gradient(
+                $color_section_about_link_current_work_hvr,
+                $color_section_about_link_current_work_hvr
+            );
         }
     }
 
