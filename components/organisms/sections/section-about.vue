@@ -10,7 +10,7 @@
         </p>
 
         <p>
-            I worked on different projects with differente technologies in the
+            I've worked on different projects with different technologies in the
             last years, as
             <a
                 class="is-section-about-link-project"
@@ -45,7 +45,7 @@
         </p>
 
         <p>
-            And also some personal side project as
+            And also some personal side projects as
             <a
                 class="is-section-about-link-project-side"
                 href="https://www.zitronenstrasse.com/"
