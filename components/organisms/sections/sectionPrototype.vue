@@ -39,58 +39,11 @@ const props = defineProps({
     &.is-section-about {
         color: $color_section_about_text;
         background-color: $color_section_about_bg;
-
-        // ==========
-        // links
-        .is-section-about-link-project,
-        .is-section-about-link-project-side,
-        .is-section-about-link-work {
-            display: inline;
-            color: $color_section_about_link;
-            background-repeat: no-repeat;
-            transition: background-size 400ms ease-in-out;
-            background-position: left;
-            background-size: 0% 100%;
-
-            &:hover {
-                background-size: 100% 100%;
-            }
-        }
-
-        .is-section-about-link-project {
-            background-image: linear-gradient(
-                $color_section_about_link_projects_hvr,
-                $color_section_about_link_projects_hvr
-            );
-        }
-
-        .is-section-about-link-project-side {
-            background-image: linear-gradient(
-                $color_section_about_link_side_projects_hvr,
-                $color_section_about_link_side_projects_hvr
-            );
-        }
-
-        .is-section-about-link-work {
-            background-image: linear-gradient(
-                $color_section_about_link_current_work_hvr,
-                $color_section_about_link_current_work_hvr
-            );
-        }
     }
 
     &.is-section-contact {
         color: $color_section_contact_text;
         background-color: $color_section_contact_bg;
-
-        // email link
-        .is-section-contact-email {
-            color: $color_section_contact_link;
-
-            &:hover {
-                color: $color_section_contact_link_hvr;
-            }
-        }
     }
 }
 </style>

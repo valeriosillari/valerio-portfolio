@@ -4,7 +4,11 @@
 
         <p>
             You can send me an
-            <AtomsEmail text="email" classnames="is-section-contact-email" />.
+            <AtomsLinkFancy
+                classnames="is-blue"
+                text="email"
+                url="mailto:hello@valeriosillari.com"
+            />
         </p>
 
         <p>Or find me on my social profiles:</p>

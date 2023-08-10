@@ -12,56 +12,53 @@
         <p>
             I've worked on different projects with different technologies in the
             last years, as
-            <a
-                class="is-section-about-link-project"
-                href="https://tickets.mackinternational.de/de/"
-                target="_blank"
-            >
-                Europa Park (Ticket Shop) </a
-            >,
+            <AtomsLinkFancy
+                classnames="is-red"
+                text="Europa Park (Ticket Shop)"
+                url="https://tickets.mackinternational.de/de/"
+            />
+            ,
 
-            <a
-                class="is-section-about-link-project"
-                href="https://www.deutschlandfunkkultur.de/"
-                target="_blank"
-            >
-                Deutschlandfunk Kultur </a
-            >,
+            <AtomsLinkFancy
+                classnames="is-red"
+                text="Deutschlandfunk Kultur"
+                url="https://www.deutschlandfunkkultur.de/"
+            />
+            ,
 
-            <a
-                class="is-section-about-link-project"
-                href="https://www.freenet.tv/"
-                target="_blank"
-            >
-                Freenet Tv</a
-            >,
+            <AtomsLinkFancy
+                classnames="is-red"
+                text="Freenet Tv"
+                url="https://www.freenet.tv/"
+            />
+            ,
 
-            <a
-                class="is-section-about-link-project"
-                href="https://www.sparwelt.de/"
-                target="_blank"
-                >Sparwelt</a
-            >.
+            <AtomsLinkFancy
+                classnames="is-red"
+                text="Sparwelt"
+                url="https://www.sparwelt.de/"
+            />
+            .
         </p>
 
         <p>
-            And also some personal side projects as
-            <a
-                class="is-section-about-link-project-side"
-                href="https://www.zitronenstrasse.com/"
-                target="_blank"
-                >Zitronenstrasse</a
-            >.
+            And also on some personal side projects as
+            <AtomsLinkFancy
+                classnames="is-yellow"
+                text="Zitronenstrasse"
+                url="https://www.zitronenstrasse.com/"
+            />
+            .
         </p>
 
         <p>
-            Now I'm working in Berlin, Germany, at
-            <a
-                class="is-section-about-link-work"
-                href="https://www.endava.com/"
-                target="_blank"
-                >Endava</a
-            >.
+            Right now I'm working in Berlin, Germany, at
+            <AtomsLinkFancy
+                classnames="is-orange"
+                text="Endava"
+                url="https://www.endava.com/"
+            />
+            .
         </p>
     </OrganismsSectionsSectionPrototype>
 </template>
