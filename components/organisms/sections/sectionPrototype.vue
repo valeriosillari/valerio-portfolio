@@ -46,9 +46,9 @@ const props = defineProps({
         .is-section-about-link-project-side,
         .is-section-about-link-work {
             display: inline;
-            color: white;
+            color: $color_section_about_link;
             background-repeat: no-repeat;
-            transition: background-size 500ms ease-in-out;
+            transition: background-size 400ms ease-in-out;
             background-position: left;
             background-size: 0% 100%;
 
