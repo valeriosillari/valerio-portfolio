@@ -31,11 +31,9 @@
     text-align: center;
 
     .no-js-fallback-title {
-        // TODO: set var for text font values
-        font-size: 24px;
-        line-height: 1.2;
+        @include heading;
+        @include font-size($h4-font-size);
         display: block;
-        padding-bottom: $space_02;
     }
 
     .no-js & {
@@ -43,5 +41,3 @@
     }
 }
 </style>
-
-https://www.enable-javascript.com/
