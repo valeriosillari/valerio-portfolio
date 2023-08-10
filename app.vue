@@ -1,10 +1,29 @@
 <template>
+    <MoleculesNoJsFallback />
+
     <MoleculesSplashscreen />
 
     <NuxtPage class="root-container" />
 
     <OrganismsFooter />
 </template>
+
+<script setup>
+const route = useRoute()
+
+onMounted(() => {
+    utilsRemoveNoJsClass()
+})
+
+watch(
+    // watch/listen a page/route change ...
+    () => route.fullPath,
+    () => {
+        // then check no js logic again
+        utilsRemoveNoJsClass()
+    }
+)
+</script>
 
 <style>
 .page-enter-active,

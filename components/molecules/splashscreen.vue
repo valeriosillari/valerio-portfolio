@@ -1,5 +1,5 @@
 <!--
-    Insiration:
+    Inspiration:
     https://javascript.plainenglish.io/show-a-loading-spinner-in-nuxt-js-7a5ad0537ebf
 -->
 
@@ -28,7 +28,7 @@ const removeFadeOut = (el, speed) => {
 }
 
 onMounted(() => {
-    removeFadeOut(root.value, 1500)
+    removeFadeOut(root.value, 1250)
 })
 </script>
 
@@ -38,7 +38,8 @@ onMounted(() => {
     width: 100vw;
     height: 100vh;
     position: fixed;
-    z-index: 50;
+    z-index: $z_index_02;
+    top: 0;
 
     .spinner-wrapper {
         position: absolute;
@@ -55,6 +56,13 @@ onMounted(() => {
             animation: animation-splashscreen 2s infinite ease-in-out;
         }
     }
+
+    // remove splashscreen after several seconds if browser has no JS enabled
+    .no-js & {
+        animation: cssAnimationHideElement 0s ease-in $timing_hide_no_js
+            forwards;
+        animation-fill-mode: forwards;
+    }
 }
 
 @keyframes animation-splashscreen {
@@ -66,6 +74,14 @@ onMounted(() => {
         -webkit-transform: scale(1);
         transform: scale(1);
         opacity: 0;
+    }
+}
+
+@keyframes cssAnimationHideElement {
+    to {
+        width: 0;
+        height: 0;
+        overflow: hidden;
     }
 }
 </style>

@@ -29,8 +29,14 @@ $breakpoint_lg: 992px;
 $breakpoint_xl: 1200px;
 $breakpoint_xxl: 1400px;
 
-// ===== Shape css (exagon) ======
+// ===== Timing ======
+$timing_hide_no_js: 8s;
 
+// ===== z-index ======
+$z_index_01: 100;
+$z_index_02: 200;
+
+// ===== Shape css (exagon) ======
 $shape_clip_path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
 
 // ===== Color Palette ======
@@ -66,6 +72,9 @@ $color_text_selection_text: $color_white;
 
 // ===== Components ======
 
+// no js fallback
+$color_no_js_bg: $color_pattern_11;
+$color_no_js_text: $color_white;
 // splashscreen
 $color_splashscreen_bg: $color_pattern_04;
 $color_splashscreen_spinner: $color_pattern_02;

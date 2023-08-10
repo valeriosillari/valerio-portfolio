@@ -28,12 +28,15 @@ const ogImageHeight = '630'
 // ====== Twitter
 const twitterUserAccountReference = '@stellavalerio'
 
+const htmlNoJsClass = 'no-js'
+
 export default defineNuxtConfig({
     // spread value from this config file globally
     // https://nuxt.com/docs/guide/going-further/runtime-config#exposing-runtime-config
     runtimeConfig: {
         public: {
             metaHeadDefaultTitleShort: titleShort,
+            htmlNoJsClass,
         },
     },
 
@@ -46,6 +49,9 @@ export default defineNuxtConfig({
         head: {
             htmlAttrs: {
                 lang: 'en',
+                // no js class (as Modernizr).
+                // removed later by the application (by utils function on app level)
+                class: htmlNoJsClass,
             },
 
             title: headTitle,
