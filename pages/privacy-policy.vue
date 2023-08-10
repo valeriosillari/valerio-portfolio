@@ -115,7 +115,7 @@ useHead({
 onMounted(() => {
     // remove component itself when fade completed (vue IF logic)
     setTimeout(() => {
-        document.body.classList.remove('no-js')
+        document.documentElement.classList.remove('no-js')
     }, 50)
 })
 </script>

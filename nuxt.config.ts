@@ -46,11 +46,8 @@ export default defineNuxtConfig({
         head: {
             htmlAttrs: {
                 lang: 'en',
-            },
-
-            bodyAttrs: {
-                // no js as for Modernizr. see app.vue on how we remove it
-                class: 'HEY no-js YO',
+                // no js as for Modernizr. remove later by the application
+                class: 'no-js',
             },
 
             title: headTitle,
