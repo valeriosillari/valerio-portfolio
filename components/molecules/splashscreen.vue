@@ -42,6 +42,7 @@ $timing_hide_no_js: 7s;
     height: 100vh;
     position: fixed;
     z-index: 200;
+    top: 0;
 
     .spinner-wrapper {
         position: absolute;
