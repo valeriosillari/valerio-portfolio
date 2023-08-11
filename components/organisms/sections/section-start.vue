@@ -3,6 +3,7 @@
         <MoleculesAvatarSvgShape />
 
         <h1>Hello I'm Valerio.</h1>
-        <p>Development Consultant. Frontend Developer. One day Jedi.</p>
+
+        <MoleculesHeadingTypeWriter />
     </OrganismsSectionsSectionPrototype>
 </template>
