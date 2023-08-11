@@ -6,13 +6,12 @@
 
         <span class="no-js-fallback-text">
             Please enable it or get more info
-            <a
-                href="https://www.enable-javascript.com/"
-                target="blank"
-                class="no-js-fallback-link"
-            >
-                here </a
-            >.
+            <AtomsLinkExternal
+                url="https://www.enable-javascript.com/"
+                title="No Javascript information"
+                text="here"
+            />
+            .
         </span>
     </div>
 </template>
