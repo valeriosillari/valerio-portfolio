@@ -7,7 +7,8 @@
             <AtomsLinkFancy
                 classnames="is-blue"
                 text="email"
-                url="mailto:hello@valeriosillari.com"
+                :url="emailUrl"
+                :isTargetBlank="false"
             />
         </p>
 
@@ -16,3 +17,8 @@
         <MoleculesSocialLinkList classnames="is-section-contact" />
     </OrganismsSectionsSectionPrototype>
 </template>
+
+<script setup lang="ts">
+const runtimeConfig = useRuntimeConfig()
+const emailUrl = `mailto:${runtimeConfig.public.email}`
+</script>

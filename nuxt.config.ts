@@ -35,6 +35,8 @@ export default defineNuxtConfig({
     // https://nuxt.com/docs/guide/going-further/runtime-config#exposing-runtime-config
     runtimeConfig: {
         public: {
+            // email as ENV value?
+            email: 'hello@valeriosillari.com',
             metaHeadDefaultTitleShort: titleShort,
             htmlNoJsClass,
         },

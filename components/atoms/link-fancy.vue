@@ -1,10 +1,9 @@
-<!-- TODO: blank is optional and true by default -->
 <template>
     <a
         :class="['b-link-fancy', props.classnames]"
         :href="props.url"
         :title="props.title"
-        target="_blank"
+        :target="isTargetBlank ? '_blank' : null"
     >
         {{ text }}
     </a>
@@ -26,6 +25,11 @@ const props = defineProps({
         type: String,
         // another prop as default value
         default: (props) => props.text,
+    },
+
+    isTargetBlank: {
+        type: Boolean,
+        default: true,
     },
 
     classnames: {
