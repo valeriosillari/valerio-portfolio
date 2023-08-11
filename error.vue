@@ -15,7 +15,7 @@
 
             <p>This page seems not working or not correct. Please try again.</p>
 
-            <AtomsButtonLink
+            <AtomsLinkButton
                 to="/"
                 text="Back to the home page"
                 classnames="is-button-error"

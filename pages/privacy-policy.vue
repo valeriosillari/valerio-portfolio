@@ -80,7 +80,7 @@
                 .
             </p>
 
-            <AtomsButtonLink
+            <AtomsLinkButton
                 to="/"
                 text="Back to the home page"
                 classnames="is-button-privacy-policy"
