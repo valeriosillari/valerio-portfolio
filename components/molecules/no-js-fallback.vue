@@ -8,8 +8,7 @@
             Please enable it or get more info
             <AtomsLinkExternal
                 url="https://www.enable-javascript.com/"
-                title="No Javascript information"
-                text="here"
+                text="No Javascript information"
             />
             .
         </span>
