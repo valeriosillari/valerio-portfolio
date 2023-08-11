@@ -36,12 +36,13 @@ For detailed explanation on how Nuxt works, checkout the [Nuxt Official Website]
 ## TODOs:
 
 -   type writing effect
+-   link external logic (default + email + fancy link)
 -   fade effects at scroll down (sections)
 -   update favicons design: from old (drops) to new (new shape) >> also social OG images
 
 ## NICE TO HAVE:
 
--   about section: better design, better links?
+-   about section: better design (layout / spaces)
 -   button go to top (footer?)
 -   ES linter?
 -   css style lint?
