@@ -17,18 +17,21 @@ const textList = [
         Frontend Coder
     </span>`,
     `<span class="type-writer-text is-text-03">
-        One day Jedi'
+        One day Jedi
     </span>`,
 ]
 
 onMounted(() => {
     new Typed(typing.value, {
         strings: textList,
-        typeSpeed: 100,
-        // backSpeed: 0,
+        typeSpeed: 80,
+        backSpeed: 0,
+        // startDelay: 0,
+        // backDelay: 0,
         loop: true,
         showCursor: false,
         fadeOut: true,
+        fadeOutDelay: 250,
     })
 })
 </script>
@@ -37,15 +40,14 @@ onMounted(() => {
 .b-heading-type-writer {
     // 2 lines of text, magic number
     min-height: 110px;
+    margin: 0;
 
     .type-writer-text {
-        padding: 0 10px;
-
         &.is-text-01 {
-            background-color: orange;
+            background-color: $color_pattern_11;
         }
         &.is-text-02 {
-            background-color: red;
+            background-color: $color_pattern_13;
         }
         &.is-text-03 {
             background-color: $color_pattern_01;
