@@ -2,7 +2,7 @@
     <NuxtLink
         :to="props.url"
         :title="props.title"
-        :class="['b-button-link', props.classnames]"
+        :class="['b-link-button', props.classnames]"
     >
         {{ props.text }}
     </NuxtLink>
@@ -29,7 +29,7 @@ const props = defineProps({
 </script>
 
 <style lang="scss">
-.b-button-link {
+.b-link-button {
     @include transition($btn-transition);
     display: inline-block;
     padding: $space_01 $space_03;

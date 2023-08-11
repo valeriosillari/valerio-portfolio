@@ -49,13 +49,11 @@
                     <h5>Vercel</h5>
                     <p>I use Vercel to host (and deploy) this website.</p>
                     <p>
-                        Here all info about their
-                        <a
-                            href="https://vercel.com/legal/privacy-policy"
-                            target="_blank"
-                        >
-                            privacy policy
-                        </a>
+                        Here all info about their&nbsp;
+                        <AtomsLinkExternal
+                            url="https://vercel.com/legal/privacy-policy"
+                            text="privacy policy"
+                        />
                     </p>
                 </li>
 
@@ -65,13 +63,11 @@
                         I use Google Fonts to get very nice text and typography.
                     </p>
                     <p>
-                        Here all info about their
-                        <a
-                            href="https://developers.google.com/fonts/faq/privacy?hl=en#:~:text=Fonts%20Web%20API%3F-,What%20does%20using%20the%20Google%20Fonts%20Web%20API%20mean%20for,not%20set%20or%20log%20cookies."
-                            target="_blank"
-                        >
-                            privacy policy
-                        </a>
+                        Here all info about their&nbsp;
+                        <AtomsLinkExternal
+                            url="https://developers.google.com/fonts/faq/privacy?hl=en#:~:text=Fonts%20Web%20API%3F-,What%20does%20using%20the%20Google%20Fonts%20Web%20API%20mean%20for,not%20set%20or%20log%20cookies."
+                            text="privacy policy"
+                        />
                     </p>
                 </li>
             </ul>
@@ -79,11 +75,12 @@
             <h3>Questions?</h3>
             <p>
                 If you have any questions about these Terms, you may contact me
-                at one of my social profiles, or my email
-                <AtomsEmail :email="email" />
+                at one of my social profiles, or my&nbsp;
+                <AtomsLinkEmail title="My email for further info/questions" />
+                .
             </p>
 
-            <AtomsButtonLink
+            <AtomsLinkButton
                 to="/"
                 text="Back to the home page"
                 classnames="is-button-privacy-policy"
@@ -94,8 +91,6 @@
 
 <script setup lang="ts">
 const runtimeConfig = useRuntimeConfig()
-
-const email = runtimeConfig.public.email
 
 const props = defineProps({
     pageTitle: {

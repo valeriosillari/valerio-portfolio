@@ -12,29 +12,29 @@
         <p>
             I've worked on different projects with different technologies in the
             last years, as
-            <AtomsLinkFancy
-                classnames="is-red"
+            <AtomsLinkExternal
+                classnames="is-link-fancy is-red"
                 text="Europa Park (Ticket Shop)"
                 url="https://tickets.mackinternational.de/de/"
             />
             ,
 
-            <AtomsLinkFancy
-                classnames="is-red"
+            <AtomsLinkExternal
+                classnames="is-link-fancy is-red"
                 text="Deutschlandfunk Kultur"
                 url="https://www.deutschlandfunkkultur.de/"
             />
             ,
 
-            <AtomsLinkFancy
-                classnames="is-red"
+            <AtomsLinkExternal
+                classnames="is-link-fancy is-red"
                 text="Freenet Tv"
                 url="https://www.freenet.tv/"
             />
             ,
 
-            <AtomsLinkFancy
-                classnames="is-red"
+            <AtomsLinkExternal
+                classnames="is-link-fancy is-red"
                 text="Sparwelt"
                 url="https://www.sparwelt.de/"
             />
@@ -43,8 +43,8 @@
 
         <p>
             And also on some personal side projects as
-            <AtomsLinkFancy
-                classnames="is-yellow"
+            <AtomsLinkExternal
+                classnames="is-link-fancy is-yellow"
                 text="Zitronenstrasse"
                 url="https://www.zitronenstrasse.com/"
             />
@@ -53,8 +53,8 @@
 
         <p>
             Right now I'm working in Berlin, Germany, at
-            <AtomsLinkFancy
-                classnames="is-orange"
+            <AtomsLinkExternal
+                classnames="is-link-fancy is-orange"
                 text="Endava"
                 url="https://www.endava.com/"
             />
