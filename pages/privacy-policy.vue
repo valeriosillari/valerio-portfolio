@@ -75,9 +75,14 @@
             <h3>Questions?</h3>
             <p>
                 If you have any questions about these Terms, you may contact me
-                at one of my social profiles, or my email&nbsp;
-                <!-- TODO: here -->
-                <AtomsEmail :email="email" />
+                at one of my social profiles, or my&nbsp;
+                <AtomsLinkExternal
+                    url="mailto:hello@valeriosillari.com"
+                    title="My email for further info/questions"
+                    text="email"
+                    :isTargetBlank="false"
+                />
+                .
             </p>
 
             <AtomsButtonLink
