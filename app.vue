@@ -3,7 +3,7 @@
 
     <MoleculesSplashscreen />
 
-    <NuxtPage class="root-container" />
+    <NuxtPage role="main" class="root-container" />
 
     <OrganismsFooter />
 </template>

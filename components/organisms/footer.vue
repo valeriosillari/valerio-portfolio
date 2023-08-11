@@ -1,5 +1,5 @@
 <template>
-    <div class="b-footer">
+    <div role="contentinfo" class="b-footer">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-sm-8">
