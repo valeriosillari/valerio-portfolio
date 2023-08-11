@@ -5,7 +5,9 @@
         :title="props.title"
         :target="isTargetBlank ? '_blank' : null"
     >
-        {{ props.text }}
+        <slot>
+            {{ props.text }}
+        </slot>
     </a>
 </template>
 

@@ -1,17 +1,17 @@
 <template>
     <div :class="['b-social-link-list', props.classnames]">
-        <a
+        <AtomsLinkExternal
             v-for="link in socialLinks"
             :key="link.name"
-            :href="link.url"
-            target="blank"
-            class="social-link-item"
+            :text="link.name"
+            :url="link.url"
+            classnames="social-link-item"
         >
             <font-awesome-icon
                 :icon="['fab', link.icon]"
                 class="social-link-icon"
             />
-        </a>
+        </AtomsLinkExternal>
     </div>
 </template>
 
@@ -51,6 +51,7 @@ const socialLinks = [
 <style lang="scss">
 .b-social-link-list {
     &.is-section-contact {
+        // link component
         .social-link-item {
             margin: $space_02 $space_01;
         }
@@ -63,6 +64,7 @@ const socialLinks = [
 
     // footer component
     &.is-footer {
+        // link component
         .social-link-item {
             margin-left: $space_01;
             color: $color_footer_link;
