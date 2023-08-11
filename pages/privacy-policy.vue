@@ -80,7 +80,7 @@
             <p>
                 If you have any questions about these Terms, you may contact me
                 at one of my social profiles, or my email
-                <AtomsEmail />
+                <AtomsEmail :email="email" />
             </p>
 
             <AtomsButtonLink
@@ -94,6 +94,8 @@
 
 <script setup lang="ts">
 const runtimeConfig = useRuntimeConfig()
+
+const email = runtimeConfig.public.email
 
 const props = defineProps({
     pageTitle: {

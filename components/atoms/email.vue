@@ -1,17 +1,16 @@
+<!-- TODO: a unique component for external links, for link and email, for normal and fancy styles -->
 <template>
-    <a
-        :class="['b-email', props.classnames]"
-        href="mailto:hello@valeriosillari.com"
-    >
-        {{ props.text }}
+    <a :class="['b-email', props.classnames]" :href="emailUrl">
+        {{ props.email }}
     </a>
 </template>
 
 <script setup>
 const props = defineProps({
-    text: {
+    email: {
         type: String,
-        default: 'hello[@]valeriosillari.com',
+        // this sholud be set here as optional and get email set as public runtime env
+        required: true,
     },
 
     classnames: {
@@ -19,4 +18,6 @@ const props = defineProps({
         default: null,
     },
 })
+
+const emailUrl = `mailto:${props.email}`
 </script>
