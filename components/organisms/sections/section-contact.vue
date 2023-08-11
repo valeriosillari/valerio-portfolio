@@ -4,8 +4,8 @@
 
         <p>
             You can send me an
-            <AtomsLinkFancy
-                classnames="is-blue"
+            <AtomsLinkExternal
+                classnames="is-link-fancy is-blue"
                 text="email"
                 :url="emailUrl"
                 :isTargetBlank="false"
