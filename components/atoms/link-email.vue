@@ -9,8 +9,8 @@
 </template>
 
 <script setup>
-// email more dynamic
-const emailUrl = `mailto:hello@valerio.sillari.com`
+const runtimeConfig = useRuntimeConfig()
+const emailUrl = `mailto:${runtimeConfig.public.email}`
 
 const props = defineProps({
     text: {
