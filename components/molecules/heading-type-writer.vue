@@ -24,7 +24,7 @@ const textList = [
 onMounted(() => {
     new Typed(typing.value, {
         strings: textList,
-        typeSpeed: 80,
+        typeSpeed: 100,
         backSpeed: 0,
         // startDelay: 0,
         // backDelay: 0,
@@ -42,6 +42,11 @@ onMounted(() => {
     min-height: 110px;
     margin: 0;
 
+    // for no js trick
+    &::before {
+        content: '';
+    }
+
     .type-writer-text {
         &.is-text-01 {
             background-color: $color_pattern_11;
@@ -51,6 +56,13 @@ onMounted(() => {
         }
         &.is-text-03 {
             background-color: $color_pattern_01;
+        }
+    }
+
+    .no-js & {
+        &::before {
+            // text as in js string above
+            content: 'Development Consultant. Frontend Coder. One day Jedi.';
         }
     }
 }
