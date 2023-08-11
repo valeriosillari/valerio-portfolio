@@ -1,5 +1,6 @@
 <!-- TODO: a unique component for external links, for link and email, for normal and fancy styles -->
 <template>
+    <!--  TODO: last thing -->
     <a :class="['b-email', props.classnames]" :href="emailUrl">
         {{ props.email }}
     </a>
