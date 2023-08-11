@@ -4,11 +4,10 @@
 
         <p>
             You can send me an
-            <AtomsLinkExternal
+
+            <AtomsLinkEmail
+                title="Send me an email (the old-fashion way)"
                 classnames="is-link-fancy is-blue"
-                text="email"
-                :url="emailUrl"
-                :isTargetBlank="false"
             />
         </p>
 
@@ -17,8 +16,3 @@
         <MoleculesSocialLinkList classnames="is-section-contact" />
     </OrganismsSectionsSectionPrototype>
 </template>
-
-<script setup lang="ts">
-const runtimeConfig = useRuntimeConfig()
-const emailUrl = `mailto:${runtimeConfig.public.email}`
-</script>

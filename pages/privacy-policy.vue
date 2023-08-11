@@ -76,12 +76,7 @@
             <p>
                 If you have any questions about these Terms, you may contact me
                 at one of my social profiles, or my&nbsp;
-                <AtomsLinkExternal
-                    url="mailto:hello@valeriosillari.com"
-                    title="My email for further info/questions"
-                    text="email"
-                    :isTargetBlank="false"
-                />
+                <AtomsLinkEmail title="My email for further info/questions" />
                 .
             </p>
 
@@ -96,8 +91,6 @@
 
 <script setup lang="ts">
 const runtimeConfig = useRuntimeConfig()
-
-const email = runtimeConfig.public.email
 
 const props = defineProps({
     pageTitle: {
