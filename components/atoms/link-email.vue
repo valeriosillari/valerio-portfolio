@@ -4,7 +4,7 @@
         :url="emailUrl"
         :text="props.text"
         :title="props.title"
-        :classnames="['b-link-email', props.classnames]"
+        :classnames="`b-link-email ${props.classnames}`"
     />
 </template>
 
