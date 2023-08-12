@@ -9,27 +9,29 @@ import Typed from 'typed.js'
 
 const typing = ref(null)
 
-const textList = [
-    `<span class="type-writer-text is-text-01">
-        Development Consultant
-    </span>`,
-    `<span class="type-writer-text is-text-02">
-        Frontend Coder
-    </span>`,
-    `<span class="type-writer-text is-text-03">
-        One day Jedi
-    </span>`,
-]
+// text strings
+const textStrings = ['Development Consultant', 'Frontend Coder', 'One day Jedi']
+
+// set strings into proper html
+let textHtmlList = []
+textStrings.forEach((string, index) => {
+    textHtmlList.push(`
+        <span class="type-writer-text is-text-0${index + 1}">
+            ${string}
+        </span>
+    `)
+})
 
 onMounted(() => {
     new Typed(typing.value, {
-        strings: textList,
+        strings: textHtmlList,
         typeSpeed: 100,
-        backSpeed: 0,
-        // startDelay: 0,
-        // backDelay: 0,
-        loop: true,
         showCursor: false,
+        // at start of each loop
+        startDelay: 1000,
+        backSpeed: 0,
+        backDelay: 0,
+        loop: true,
         fadeOut: true,
         fadeOutDelay: 250,
     })
@@ -39,7 +41,8 @@ onMounted(() => {
 <style lang="scss">
 .b-heading-type-writer {
     // 2 lines of text, magic number
-    min-height: 110px;
+    min-height: 90px;
+    // reset <p>
     margin: 0;
 
     // for no js trick
@@ -47,7 +50,9 @@ onMounted(() => {
         content: '';
     }
 
+    // <span> real text
     .type-writer-text {
+        line-height: 1.6;
         &.is-text-01 {
             background-color: $color_pattern_11;
         }
