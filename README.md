@@ -46,3 +46,4 @@ For detailed explanation on how Nuxt works, checkout the [Nuxt Official Website]
 -   css style lint?
 -   nuxt-image plugin (image on assets folder)
 -   headless CMS
+-   better type writer effect (animation from bottom as enter, fade out + seo friendly)
