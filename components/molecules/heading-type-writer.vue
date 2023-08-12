@@ -25,10 +25,10 @@ textStrings.forEach((string, index) => {
 onMounted(() => {
     new Typed(typing.value, {
         strings: textHtmlList,
-        typeSpeed: 100,
+        typeSpeed: 80,
         showCursor: false,
         // at start of each loop
-        startDelay: 1000,
+        // startDelay: 1000,
         backSpeed: 0,
         backDelay: 0,
         loop: true,
