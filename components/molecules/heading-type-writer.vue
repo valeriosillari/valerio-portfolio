@@ -34,6 +34,10 @@ onMounted(() => {
         loop: true,
         fadeOut: true,
         fadeOutDelay: 250,
+        // 1 word is done (for each word in the array)
+        // onStringTyped: () => {
+        //     alert('onStringTyped')
+        // },
     })
 })
 </script>
