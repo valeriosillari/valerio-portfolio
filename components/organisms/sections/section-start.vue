@@ -5,15 +5,15 @@
     >
         <MoleculesAvatarSvgShape
             data-aos="fade-up"
-            data-aos-duration="1200"
-            data-aos-delay="300"
+            data-aos-duration="1500"
+            data-aos-delay="500"
         />
 
         <div
             class="heading"
             data-aos="fade-up"
-            data-aos-duration="1800"
-            data-aos-delay="1000"
+            data-aos-duration="1500"
+            data-aos-delay="1700"
         >
             <h1>Hello, I'm Valerio.</h1>
 
