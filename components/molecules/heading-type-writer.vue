@@ -57,9 +57,6 @@ onMounted(() => {
     // <span> real text
     .type-writer-text {
         line-height: 1.6;
-        // inline block necessary to avoid extra space (css reset)
-        display: inline-block;
-        padding: $space_00 $space_01;
 
         &.is-text-01 {
             background-color: $color_pattern_11;
