@@ -188,7 +188,7 @@ export default defineNuxtConfig({
                 // site manifest
                 {
                     rel: 'manifest',
-                    href: '/site.webmanifest',
+                    href: '/app-icons/site.webmanifest',
                 },
 
                 // link canonical

@@ -3,7 +3,7 @@
     "name": "Valerio Sillari | Portfolio",
     "icons": [
         {
-            "src": "app-icons/apple_touch_icon.png",
+            "src": "apple_touch_icon.png",
             "type": "image/png",
             "sizes": "192x192"
         }
