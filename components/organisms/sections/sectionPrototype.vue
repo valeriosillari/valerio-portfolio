@@ -24,8 +24,8 @@ const animationAttributes = computed(() => {
     if (props.hasSectionAnimationEffect) {
         return {
             'data-aos': 'fade-up',
-            'data-aos-duration': '1000',
-            'data-aos-delay': '300',
+            'data-aos-duration': '800',
+            'data-aos-delay': '200',
         }
     }
     return false
