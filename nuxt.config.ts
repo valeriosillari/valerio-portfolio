@@ -199,7 +199,7 @@ export default defineNuxtConfig({
             ],
 
             // external js files
-            script: [{ src: '/node_modules/aos/dist/aos.js' }],
+            // script: [{ src: '/node_modules/aos/dist/aos.js' }],
         },
     },
 
