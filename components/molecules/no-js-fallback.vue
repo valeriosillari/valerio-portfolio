@@ -16,6 +16,16 @@
 </template>
 
 <style lang="scss">
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        height: 100%;
+    }
+}
+
 .b-no-js-fallback {
     background-color: $color_no_js_bg;
     color: $color_no_js_text;
@@ -27,6 +37,7 @@
     z-index: $z_index_01;
     display: none;
     text-align: center;
+    height: 0;
 
     .no-js-fallback-title {
         @include heading;
@@ -36,6 +47,7 @@
 
     .no-js & {
         display: block;
+        animation: fadeIn 3s;
     }
 }
 </style>
