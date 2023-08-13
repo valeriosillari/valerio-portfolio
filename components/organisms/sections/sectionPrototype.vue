@@ -1,6 +1,6 @@
 <template>
     <div :class="['b-section', props.classnames]">
-        <div class="container">
+        <div class="container" v-bind="animationAttributes">
             <slot></slot>
         </div>
     </div>
@@ -12,6 +12,23 @@ const props = defineProps({
         type: String,
         default: null,
     },
+
+    hasSectionAnimationEffect: {
+        type: Boolean,
+        default: true,
+    },
+})
+
+// a computed ref
+const animationAttributes = computed(() => {
+    if (props.hasSectionAnimationEffect) {
+        return {
+            'data-aos': 'fade-up',
+            'data-aos-duration': '1000',
+            'data-aos-delay': '300',
+        }
+    }
+    return false
 })
 </script>
 

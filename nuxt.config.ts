@@ -197,6 +197,9 @@ export default defineNuxtConfig({
                     href: appMainUrl,
                 },
             ],
+
+            // external js files
+            script: [{ src: '/node_modules/aos/dist/aos.js' }],
         },
     },
 

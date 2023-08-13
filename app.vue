@@ -13,6 +13,8 @@ const route = useRoute()
 
 onMounted(() => {
     utilsRemoveNoJsClass()
+
+    AOS.init()
 })
 
 watch(
