@@ -1,6 +1,6 @@
 <template>
     <div class="b-page-privacy-policy">
-        <div class="container">
+        <div class="container" v-bind="animationAttributes">
             <h1>
                 {{ props.pageTitle }}
             </h1>
@@ -98,6 +98,13 @@ const props = defineProps({
         default: 'Privacy Policy',
     },
 })
+
+const animationAttributes = {
+    'data-aos': 'fade-up',
+    'data-aos-duration': '800',
+    'data-aos-delay': '200',
+    'data-aos-once': 'true',
+}
 
 useHead({
     title: `${props.pageTitle} | ${runtimeConfig.public.metaHeadDefaultTitleShort}`,

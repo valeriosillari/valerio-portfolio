@@ -7,6 +7,7 @@
             data-aos="fade-up"
             data-aos-duration="1500"
             data-aos-delay="500"
+            data-aos-once="true"
         />
 
         <div
@@ -14,6 +15,7 @@
             data-aos="fade-up"
             data-aos-duration="1500"
             data-aos-delay="1700"
+            data-aos-once="true"
         >
             <h1>Hello, I'm Valerio.</h1>
 

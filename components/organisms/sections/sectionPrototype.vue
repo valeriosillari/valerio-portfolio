@@ -19,13 +19,13 @@ const props = defineProps({
     },
 })
 
-// a computed ref
 const animationAttributes = computed(() => {
     if (props.hasSectionAnimationEffect) {
         return {
             'data-aos': 'fade-up',
             'data-aos-duration': '800',
             'data-aos-delay': '200',
+            'data-aos-once': 'true',
         }
     }
     return false
