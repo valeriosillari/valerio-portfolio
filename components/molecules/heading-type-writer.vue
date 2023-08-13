@@ -23,22 +23,25 @@ textStrings.forEach((string, index) => {
 })
 
 onMounted(() => {
-    new Typed(typing.value, {
-        strings: textHtmlList,
-        typeSpeed: 80,
-        showCursor: false,
-        // at start of each loop
-        // startDelay: 1000,
-        backSpeed: 0,
-        backDelay: 0,
-        loop: true,
-        fadeOut: true,
-        fadeOutDelay: 250,
-        // 1 word is done (for each word in the array)
-        // onStringTyped: () => {
-        //     alert('onStringTyped')
-        // },
-    })
+    // timeout to sync with AOS animation on start section
+    setTimeout(() => {
+        new Typed(typing.value, {
+            strings: textHtmlList,
+            typeSpeed: 80,
+            showCursor: false,
+            // at start of each loop
+            // startDelay: 500,
+            backSpeed: 0,
+            backDelay: 0,
+            loop: true,
+            fadeOut: true,
+            fadeOutDelay: 250,
+            // 1 word is done (for each word in the array)
+            // onStringTyped: () => {
+            //     alert('onStringTyped')
+            // },
+        })
+    }, 2000)
 })
 </script>
 
