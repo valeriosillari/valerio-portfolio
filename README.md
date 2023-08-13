@@ -37,7 +37,6 @@ For detailed explanation on how Nuxt works, checkout the [Nuxt Official Website]
 
 -   app config vs runtime config
 -   update favicons design: from old (drops) to new (new shape) >> also social OG images
--   js fallback FOUC (from error page to homepage)
 
 ## NICE TO HAVE:
 

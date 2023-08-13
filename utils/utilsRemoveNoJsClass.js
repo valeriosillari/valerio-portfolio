@@ -10,7 +10,7 @@ const utilsRemoveNoJsClass = () => {
         document.documentElement.classList.remove(
             runtimeConfig.public.htmlNoJsClass
         )
-    }, 50)
+    }, 25)
 }
 
 export default utilsRemoveNoJsClass

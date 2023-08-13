@@ -22,7 +22,6 @@
     }
     100% {
         opacity: 1;
-        height: 100%;
     }
 }
 
@@ -37,7 +36,6 @@
     z-index: $z_index_01;
     display: none;
     text-align: center;
-    height: 0;
 
     .no-js-fallback-title {
         @include heading;
