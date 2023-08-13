@@ -35,8 +35,9 @@ For detailed explanation on how Nuxt works, checkout the [Nuxt Official Website]
 
 ## TODOs:
 
--   fade effects at scroll down (sections)
+-   app config vs runtime config
 -   update favicons design: from old (drops) to new (new shape) >> also social OG images
+-   js fallback FOUC (from error page to homepage)
 
 ## NICE TO HAVE:
 
@@ -46,4 +47,4 @@ For detailed explanation on how Nuxt works, checkout the [Nuxt Official Website]
 -   css style lint?
 -   nuxt-image plugin (image on assets folder)
 -   headless CMS
--   better type writer effect (animation from bottom as enter, fade out + seo friendly)
+-   better type writer effect (animation from bottom as enter, fade out + seo friendly + padding text)
