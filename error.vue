@@ -2,7 +2,7 @@
     <MoleculesSplashscreen />
 
     <div role="main" class="root-container b-page-error">
-        <div class="container" v-bind="animationAttributes">
+        <div class="container">
             <h1>{{ props.pageTitle }}.</h1>
 
             <h2>404</h2>
@@ -36,13 +36,6 @@ const props = defineProps({
     },
 })
 
-const animationAttributes = {
-    'data-aos': 'fade-up',
-    'data-aos-duration': '800',
-    'data-aos-delay': '200',
-    'data-aos-once': 'true',
-}
-
 useHead({
     title: `${props.pageTitle} | ${runtimeConfig.public.metaHeadDefaultTitleShort}`,
     meta: [
@@ -51,10 +44,6 @@ useHead({
             content: `${props.pageTitle} | ${runtimeConfig.public.metaHeadDefaultTitleShort}`,
         },
     ],
-})
-
-onMounted(() => {
-    AOS.init()
 })
 </script>
 
