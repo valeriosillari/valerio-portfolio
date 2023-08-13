@@ -14,7 +14,7 @@
             class="heading"
             data-aos="fade-up"
             data-aos-duration="1500"
-            data-aos-delay="1700"
+            data-aos-delay="1800"
             data-aos-once="true"
         >
             <h1>Hello, I'm Valerio.</h1>
