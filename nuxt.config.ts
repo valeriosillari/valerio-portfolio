@@ -197,6 +197,12 @@ export default defineNuxtConfig({
                     href: appMainUrl,
                 },
             ],
+
+            // // external js
+            // script: [
+            //     {
+            //     },
+            // ],
         },
     },
 
