@@ -41,7 +41,7 @@ const animationAttributes = computed(() => {
 
     // as bootstrap h2
     p {
-        @include heading;
+        @include heading(1.5rem);
         @include font-size($h2-font-size);
     }
 

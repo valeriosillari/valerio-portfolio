@@ -1,4 +1,6 @@
 <template>
+    <MoleculesNoJsFallback />
+
     <MoleculesSplashscreen />
 
     <div role="main" class="root-container b-page-error">
@@ -44,6 +46,10 @@ useHead({
             content: `${props.pageTitle} | ${runtimeConfig.public.metaHeadDefaultTitleShort}`,
         },
     ],
+})
+
+onMounted(() => {
+    utilsRemoveNoJsClass()
 })
 </script>
 

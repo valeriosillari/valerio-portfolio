@@ -2,9 +2,9 @@
 // we need a copy because original bootstrap function is not on CONFIGURATION files.
 // so we duplicate it
 
-@mixin heading {
+@mixin heading($marginBottomSpace: $headings-font-family) {
     // margin-top: 0; // 1
-    margin-bottom: 1.5rem;
+    margin-bottom: $marginBottomSpace;
     font-family: $headings-font-family;
     font-style: $headings-font-style;
     font-weight: $headings-font-weight;
