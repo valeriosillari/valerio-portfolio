@@ -1,5 +1,5 @@
 <template>
-    <p class="b-heading-type-writer" ref="typing"></p>
+    <p class="b-heading-type-writer" ref="root"></p>
 </template>
 
 <!-- Vue/Nuxt 3 Implementation -->
@@ -7,7 +7,7 @@
 <script setup>
 import Typed from 'typed.js'
 
-const typing = ref(null)
+const root = ref(null)
 
 // text strings
 const textStrings = ['Development Consultant', 'Frontend Coder', 'One day Jedi']
@@ -25,7 +25,7 @@ textStrings.forEach((string, index) => {
 onMounted(() => {
     // timeout to sync with AOS animation on start section
     setTimeout(() => {
-        new Typed(typing.value, {
+        new Typed(root.value, {
             strings: textHtmlList,
             typeSpeed: 80,
             showCursor: false,
