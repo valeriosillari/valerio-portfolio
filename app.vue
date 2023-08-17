@@ -1,11 +1,7 @@
 <template>
-    <MoleculesNoJsFallback />
-
-    <MoleculesSplashscreen />
-
-    <NuxtPage role="main" class="root-container" />
-
-    <OrganismsFooter />
+    <NuxtLayout>
+        <NuxtPage role="main" class="root-container" />
+    </NuxtLayout>
 </template>
 
 <script setup>

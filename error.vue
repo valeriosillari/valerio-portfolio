@@ -1,31 +1,30 @@
 <template>
-    <MoleculesNoJsFallback />
+    <NuxtLayout>
+        <div role="main" class="root-container b-page-error">
+            <div class="container">
+                <h1>{{ props.pageTitle }}.</h1>
 
-    <MoleculesSplashscreen />
+                <h2>404</h2>
 
-    <div role="main" class="root-container b-page-error">
-        <div class="container">
-            <h1>{{ props.pageTitle }}.</h1>
+                <AtomsImage
+                    :classnames="'is-image-error'"
+                    :src="'/images/star-wars-no.gif'"
+                    :alt="'Nope.'"
+                />
 
-            <h2>404</h2>
+                <p>
+                    This page seems not working or not correct. Please try
+                    again.
+                </p>
 
-            <AtomsImage
-                :classnames="'is-image-error'"
-                :src="'/images/star-wars-no.gif'"
-                :alt="'Nope.'"
-            />
-
-            <p>This page seems not working or not correct. Please try again.</p>
-
-            <AtomsLinkButton
-                to="/"
-                text="Back to the home page"
-                classnames="is-button-error"
-            />
+                <AtomsLinkButton
+                    to="/"
+                    text="Back to the home page"
+                    classnames="is-button-error"
+                />
+            </div>
         </div>
-    </div>
-
-    <OrganismsFooter />
+    </NuxtLayout>
 </template>
 
 <script setup lang="ts">
