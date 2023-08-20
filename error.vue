@@ -1,6 +1,6 @@
 <template>
     <NuxtLayout>
-        <div role="main" class="root-container b-page-error">
+        <div class="b-page-error">
             <div class="container">
                 <h1>{{ props.pageTitle }}.</h1>
 

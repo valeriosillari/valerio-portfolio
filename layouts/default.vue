@@ -1,13 +1,13 @@
 <template>
-    <div class="LAYOUTTTTTTT" style="border: 10px solid pink">
-        <MoleculesNoJsFallback />
+    <MoleculesNoJsFallback />
 
-        <MoleculesSplashscreen />
+    <MoleculesSplashscreen />
 
+    <div role="main" class="root-container">
         <slot />
-
-        <OrganismsFooter />
     </div>
+
+    <OrganismsFooter />
 </template>
 
 <script setup>
