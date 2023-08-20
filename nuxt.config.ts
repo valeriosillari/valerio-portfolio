@@ -58,6 +58,21 @@ export default defineNuxtConfig({
 
             title: headTitle,
 
+            noscript: [
+                {
+                    // for AOS fallback when no js enabled
+                    // https://github.com/nuxt/nuxt/issues/13848
+                    children: `
+                        <style type="text/css">
+                            [data-aos] {
+                                opacity: 1 !important;
+                                transform: translate(0) scale(1) !important;
+                            }
+                        </style>                    
+                    `,
+                },
+            ],
+
             meta: [
                 // viewport set on mobile
                 {
