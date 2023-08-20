@@ -46,10 +46,6 @@ useHead({
         },
     ],
 })
-
-onMounted(() => {
-    utilsRemoveNoJsClass()
-})
 </script>
 
 <style lang="scss">
