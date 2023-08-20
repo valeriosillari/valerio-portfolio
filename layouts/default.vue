@@ -10,6 +10,25 @@
     </div>
 </template>
 
+<script setup>
+const route = useRoute()
+
+onMounted(() => {
+    console.log('LAYOUT >> Mounted')
+    utilsRemoveNoJsClass()
+})
+
+watch(
+    // watch/listen a page/route change ...
+    () => route.fullPath,
+    () => {
+        console.log('LAYOUT >> Watch')
+        // then check no js logic again
+        utilsRemoveNoJsClass()
+    }
+)
+</script>
+
 <style lang="scss">
 .page-enter-active,
 .page-leave-active {
