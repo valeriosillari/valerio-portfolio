@@ -14,15 +14,16 @@
 const route = useRoute()
 
 onMounted(() => {
-    console.log('LAYOUT >> Mounted')
     utilsRemoveNoJsClass()
+
+    // just for fun ;)
+    console.log('🚀')
 })
 
 watch(
     // watch/listen a page/route change ...
     () => route.fullPath,
     () => {
-        console.log('LAYOUT >> Watch')
         // then check no js logic again
         utilsRemoveNoJsClass()
     }
