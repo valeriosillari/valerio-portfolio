@@ -180,19 +180,19 @@ export default defineNuxtConfig({
             ],
 
             link: [
-                // favicon (root)
+                // favicon (ico)
                 {
                     rel: 'icon',
                     sizes: 'any',
-                    href: '/favicon.ico',
+                    href: '/app-icons/favicon.ico',
                 },
 
-                // TODO: set icon as svg
-                // {
-                //     rel: 'icon',
-                //     type: 'image/svg+xml',
-                //     href: '/app-icons/icon.svg',
-                // },
+                // TODO: set correct icon as svg
+                {
+                    rel: 'icon',
+                    type: 'image/svg+xml',
+                    href: '/app-icons/icon.svg',
+                },
 
                 // apple-touch-icon
                 {
