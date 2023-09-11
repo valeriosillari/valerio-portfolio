@@ -35,7 +35,7 @@ For detailed explanation on how Nuxt works, checkout the [Nuxt Official Website]
 
 ## TODOs:
 
--   update favicons design: from old (drops) to new (new shape) >> SVG icon (see config) >> also social OG images
+...
 
 ## NICE TO HAVE:
 
