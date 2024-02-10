@@ -26,6 +26,5 @@
         "sass": "^1.63.6",
         "typed.js": "^2.0.16"
     },
-    "version": "11.0.0",
-    "packageManager": "yarn@4.1.0"
+    "version": "11.0.0"
 }
