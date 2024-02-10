@@ -19,7 +19,7 @@
         "@nuxtjs/google-fonts": "^3.0.2",
         "@types/node": "^18.16.19",
         "aos": "^2.3.4",
-        "bootstrap": "5.3.0",
+        "bootstrap": "5.3.2",
         "breakpoint-sass": "^3.0.0",
         "nuxt": "^3.10.1",
         "prettier": "^3.0.0",
