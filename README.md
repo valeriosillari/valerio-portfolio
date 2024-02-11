@@ -9,16 +9,16 @@
 ```bash
 
 # install dependencies
-$ npm install
+$ yarn install
 
 # serve with hot reload at localhost:3000 (DEV Mode)
-$ npm run dev
+$ yarn dev
 
 # generate built project (Prod SERVER)
-$ npm run build
+$ yarn build
 
 # generate static project (Prod STATIC)
-$ npm run generate
+$ yarn generate
 
 ```
 
