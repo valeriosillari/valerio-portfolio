@@ -10,7 +10,11 @@ import Typed from 'typed.js'
 const root = ref(null)
 
 // text strings
-const textStrings = ['Development Consultant', 'Frontend Coder', 'One day Jedi']
+const textStrings = [
+    'Development Consultant',
+    'Senior Frontend Developer',
+    'One day Jedi',
+]
 
 // set strings into proper html
 let textHtmlList = []
@@ -75,7 +79,7 @@ onMounted(() => {
     .no-js & {
         &::before {
             // text as in js string above
-            content: 'Development Consultant. Frontend Coder. One day Jedi.';
+            content: 'Development Consultant. Senior Frontend Developer. One day Jedi.';
         }
     }
 }
