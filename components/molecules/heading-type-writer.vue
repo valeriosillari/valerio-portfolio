@@ -31,7 +31,7 @@ onMounted(() => {
     setTimeout(() => {
         new Typed(root.value, {
             strings: textHtmlList,
-            typeSpeed: 80,
+            typeSpeed: 75,
             showCursor: false,
             // at start of each loop
             // startDelay: 500,
