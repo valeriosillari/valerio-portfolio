@@ -236,6 +236,7 @@ export default defineNuxtConfig({
     // buildModules: ['@nuxtjs/google-fonts'],
     modules: [
         [
+            '@nuxtjs/sitemap',
             // https://masanos.com/notes/l37t1_8qf-fv/
             '@nuxtjs/google-fonts',
             {
