@@ -30,10 +30,13 @@ const twitterUserAccountReference = '@stellavalerio'
 
 const htmlNoJsClass = 'no-js'
 
+const graphqlEndpoint = `https://graphql.contentful.com/content/v1/spaces/${process.env.CONTENTFUL_GQL_SPACE}?access_token=${process.env.CONTENTFUL_GQL_TOKEN}`
+
 export default defineNuxtConfig({
     // spread value from this config file globally
     // https://nuxt.com/docs/guide/going-further/runtime-config#exposing-runtime-config
     runtimeConfig: {
+        originalEndpointToBeProxied: graphqlEndpoint,
         public: {
             // email as ENV value?
             email: 'hello@valeriosillari.com',
