@@ -22,7 +22,7 @@
         "aos": "^2.3.4",
         "bootstrap": "5.3.2",
         "breakpoint-sass": "^3.0.0",
-        "nuxt": "^3.10.1",
+        "nuxt": "^3.13.2",
         "prettier": "^3.0.0",
         "sass": "^1.63.6",
         "typed.js": "^2.0.16"

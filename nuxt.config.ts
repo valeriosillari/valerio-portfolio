@@ -5,7 +5,7 @@ const titleShort = 'Valerio Sillari'
 const authorName = titleShort
 
 // main title
-const headTitle = ` ${titleShort} | Development Consultant`
+const headTitle = ` ${titleShort} | Development Consultant | Senior Frontend Developer`
 
 // used in head description in all the pages
 const headDescription =
