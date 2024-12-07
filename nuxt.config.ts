@@ -33,238 +33,244 @@ const htmlNoJsClass = 'no-js'
 const graphqlEndpoint = `https://graphql.contentful.com/content/v1/spaces/${process.env.CONTENTFUL_GQL_SPACE}?access_token=${process.env.CONTENTFUL_GQL_TOKEN}`
 
 export default defineNuxtConfig({
-    // spread value from this config file globally
-    // https://nuxt.com/docs/guide/going-further/runtime-config#exposing-runtime-config
-    runtimeConfig: {
-        originalEndpointToBeProxied: graphqlEndpoint,
-        public: {
-            // email as ENV value?
-            email: 'hello@valeriosillari.com',
-            metaHeadDefaultTitleShort: titleShort,
-            htmlNoJsClass,
-        },
-    },
+  devServer: {
+      port: 8000,
+  },
 
-    app: {
-        pageTransition: {
-            name: 'page',
-            mode: 'out-in',
-        },
+  // spread value from this config file globally
+  // https://nuxt.com/docs/guide/going-further/runtime-config#exposing-runtime-config
+  runtimeConfig: {
+      originalEndpointToBeProxied: graphqlEndpoint,
+      public: {
+          // email as ENV value?
+          email: 'hello@valeriosillari.com',
+          metaHeadDefaultTitleShort: titleShort,
+          htmlNoJsClass,
+      },
+  },
 
-        head: {
-            htmlAttrs: {
-                lang: 'en',
-                // no js class (as Modernizr).
-                // removed later by the application (by utils function on app level)
-                class: htmlNoJsClass,
-            },
+  app: {
+      pageTransition: {
+          name: 'page',
+          mode: 'out-in',
+      },
 
-            title: headTitle,
+      head: {
+          htmlAttrs: {
+              lang: 'en',
+              // no js class (as Modernizr).
+              // removed later by the application (by utils function on app level)
+              class: htmlNoJsClass,
+          },
 
-            noscript: [
-                {
-                    // for AOS fallback when no js enabled
-                    // https://github.com/nuxt/nuxt/issues/13848
-                    children: `
-                        <style type="text/css">
-                            [data-aos] {
-                                opacity: 1 !important;
-                                transform: translate(0) scale(1) !important;
-                            }
-                        </style>                    
-                    `,
-                },
-            ],
+          title: headTitle,
 
-            meta: [
-                // viewport set on mobile
-                {
-                    name: 'viewport',
-                    content:
-                        'width=device-width, initial-scale=1, shrink-to-fit=no',
-                },
+          noscript: [
+              {
+                  // for AOS fallback when no js enabled
+                  // https://github.com/nuxt/nuxt/issues/13848
+                  children: `
+                      <style type="text/css">
+                          [data-aos] {
+                              opacity: 1 !important;
+                              transform: translate(0) scale(1) !important;
+                          }
+                      </style>                    
+                  `,
+              },
+          ],
 
-                {
-                    hid: 'description',
-                    name: 'description',
-                    content: headDescription,
-                },
+          meta: [
+              // viewport set on mobile
+              {
+                  name: 'viewport',
+                  content:
+                      'width=device-width, initial-scale=1, shrink-to-fit=no',
+              },
 
-                {
-                    hid: 'author',
-                    name: 'author',
-                    content: authorName,
-                },
+              {
+                  hid: 'description',
+                  name: 'description',
+                  content: headDescription,
+              },
 
-                {
-                    hid: 'keywords',
-                    name: 'keywords',
-                    content: metaKeywords,
-                },
+              {
+                  hid: 'author',
+                  name: 'author',
+                  content: authorName,
+              },
 
-                // OG options for open graph: Fb and Linkedin
-                {
-                    hid: 'og:title',
-                    property: 'og:title',
-                    content: ogTitle,
-                },
-                {
-                    hid: 'og:description',
-                    property: 'og:description',
-                    content: ogDescription,
-                },
-                {
-                    hid: 'og:type',
-                    property: 'og:type',
-                    content: ogType,
-                },
-                {
-                    hid: 'og:url',
-                    property: 'og:url',
-                    content: ogUrl,
-                },
-                {
-                    hid: 'og:image',
-                    property: 'og:image',
-                    content: ogImage,
-                },
-                {
-                    hid: 'og:image:width',
-                    property: 'og:image:width',
-                    content: ogImageWidth,
-                },
-                {
-                    hid: 'og:image:height',
-                    property: 'og:image:height',
-                    content: ogImageHeight,
-                },
-                // Twitter card
-                {
-                    hid: 'twitter:card',
-                    property: 'twitter:card',
-                    content: 'summary_large_image',
-                },
+              {
+                  hid: 'keywords',
+                  name: 'keywords',
+                  content: metaKeywords,
+              },
 
-                {
-                    hid: 'twitter:site',
-                    property: 'twitter:site',
-                    content: twitterUserAccountReference,
-                },
+              // OG options for open graph: Fb and Linkedin
+              {
+                  hid: 'og:title',
+                  property: 'og:title',
+                  content: ogTitle,
+              },
+              {
+                  hid: 'og:description',
+                  property: 'og:description',
+                  content: ogDescription,
+              },
+              {
+                  hid: 'og:type',
+                  property: 'og:type',
+                  content: ogType,
+              },
+              {
+                  hid: 'og:url',
+                  property: 'og:url',
+                  content: ogUrl,
+              },
+              {
+                  hid: 'og:image',
+                  property: 'og:image',
+                  content: ogImage,
+              },
+              {
+                  hid: 'og:image:width',
+                  property: 'og:image:width',
+                  content: ogImageWidth,
+              },
+              {
+                  hid: 'og:image:height',
+                  property: 'og:image:height',
+                  content: ogImageHeight,
+              },
+              // Twitter card
+              {
+                  hid: 'twitter:card',
+                  property: 'twitter:card',
+                  content: 'summary_large_image',
+              },
 
-                {
-                    hid: 'twitter:creator',
-                    property: 'twitter:creator',
-                    content: authorName,
-                },
+              {
+                  hid: 'twitter:site',
+                  property: 'twitter:site',
+                  content: twitterUserAccountReference,
+              },
 
-                {
-                    hid: 'twitter:title',
-                    property: 'twitter:title',
-                    content: ogTitle,
-                },
+              {
+                  hid: 'twitter:creator',
+                  property: 'twitter:creator',
+                  content: authorName,
+              },
 
-                {
-                    hid: 'twitter:description',
-                    property: 'twitter:description',
-                    content: ogDescription,
-                },
+              {
+                  hid: 'twitter:title',
+                  property: 'twitter:title',
+                  content: ogTitle,
+              },
 
-                {
-                    hid: 'twitter:image',
-                    property: 'twitter:image',
-                    content: ogImage,
-                },
+              {
+                  hid: 'twitter:description',
+                  property: 'twitter:description',
+                  content: ogDescription,
+              },
 
-                {
-                    hid: 'twitter:image:alt',
-                    property: 'twitter:image:alt',
-                    content: ogTitle,
-                },
-            ],
+              {
+                  hid: 'twitter:image',
+                  property: 'twitter:image',
+                  content: ogImage,
+              },
 
-            link: [
-                // favicon (ico)
-                {
-                    rel: 'icon',
-                    sizes: 'any',
-                    href: '/app-icons/favicon.ico',
-                },
+              {
+                  hid: 'twitter:image:alt',
+                  property: 'twitter:image:alt',
+                  content: ogTitle,
+              },
+          ],
 
-                // TODO: set correct icon as svg
-                {
-                    rel: 'icon',
-                    type: 'image/svg+xml',
-                    href: '/app-icons/icon.svg',
-                },
+          link: [
+              // favicon (ico)
+              {
+                  rel: 'icon',
+                  sizes: 'any',
+                  href: '/app-icons/favicon.ico',
+              },
 
-                // apple-touch-icon
-                {
-                    rel: 'apple-touch-icon',
-                    href: '/app-icons/apple_touch_icon.png',
-                },
+              // TODO: set correct icon as svg
+              {
+                  rel: 'icon',
+                  type: 'image/svg+xml',
+                  href: '/app-icons/icon.svg',
+              },
 
-                // site manifest
-                {
-                    rel: 'manifest',
-                    href: '/app-icons/site.webmanifest',
-                },
+              // apple-touch-icon
+              {
+                  rel: 'apple-touch-icon',
+                  href: '/app-icons/apple_touch_icon.png',
+              },
 
-                // link canonical
-                {
-                    rel: 'canonical',
-                    href: appMainUrl,
-                },
-            ],
+              // site manifest
+              {
+                  rel: 'manifest',
+                  href: '/app-icons/site.webmanifest',
+              },
 
-            // // external js
-            // script: [
-            //     {
-            //     },
-            // ],
-        },
-    },
+              // link canonical
+              {
+                  rel: 'canonical',
+                  href: appMainUrl,
+              },
+          ],
 
-    devtools: { enabled: true },
+          // // external js
+          // script: [
+          //     {
+          //     },
+          // ],
+      },
+  },
 
-    build: {
-        // Font awesome trick, for fixing hydration
-        // https://github.com/nuxt/nuxt/discussions/16014
-        transpile: [
-            '@fortawesome/vue-fontawesome',
-            '@fortawesome/fontawesome-svg-core',
-            '@fortawesome/free-brands-svg-icons',
-        ],
-    },
+  devtools: { enabled: true },
 
-    // buildModules: ['@nuxtjs/google-fonts'],
-    modules: [
-        '@nuxtjs/sitemap',
-        [
-            // https://masanos.com/notes/l37t1_8qf-fv/
-            '@nuxtjs/google-fonts',
-            {
-                families: {
-                    'Titillium+Web': {
-                        wght: [200],
-                        ital: [200],
-                    },
-                },
-            },
-        ],
-    ],
+  build: {
+      // Font awesome trick, for fixing hydration
+      // https://github.com/nuxt/nuxt/discussions/16014
+      transpile: [
+          '@fortawesome/vue-fontawesome',
+          '@fortawesome/fontawesome-svg-core',
+          '@fortawesome/free-brands-svg-icons',
+      ],
+  },
 
-    vite: {
-        css: {
-            preprocessorOptions: {
-                // all global var and mixins and functions
-                scss: {
-                    additionalData:
-                        '@use "@/assets/sass/root_configuration.scss" as *;',
-                },
-            },
-        },
-    },
+  // buildModules: ['@nuxtjs/google-fonts'],
+  modules: [
+      '@nuxtjs/sitemap',
+      [
+          // https://masanos.com/notes/l37t1_8qf-fv/
+          '@nuxtjs/google-fonts',
+          {
+              families: {
+                  'Titillium+Web': {
+                      wght: [200],
+                      ital: [200],
+                  },
+              },
+          },
+      ],
+  ],
 
-    // all pure code (sass, css, scss ...)
-    css: ['@/assets/sass/root.scss'],
+  vite: {
+      css: {
+          preprocessorOptions: {
+              // all global var and mixins and functions
+              scss: {
+                  additionalData:
+                      '@use "@/assets/sass/root_configuration.scss" as *;',
+              },
+          },
+      },
+  },
+
+  // all pure code (sass, css, scss ...)
+  css: ['@/assets/sass/root.scss'],
+
+  compatibilityDate: '2024-12-08',
 })
