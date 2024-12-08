@@ -3,14 +3,12 @@
         <video
             autoplay
             muted
+            loop
             class="background-video"
             ref="backgroundVideo"
             @timeupdate="handleTimeUpdate"
         >
-            <source
-                src="/videos/1926295-hd_1920_1080_25fps.mp4"
-                type="video/mp4"
-            />
+            <source :src="videoUrl" 857134-hd_1280_720_24fps type="video/mp4" />
             Your browser does not support the video tag.
         </video>
 
@@ -63,6 +61,10 @@
 </style>
 
 <script setup>
+// const videoUrl = '/videos/1926295-hd_1920_1080_25fps.mp4'
+// const videoUrl = '/videos/857134-hd_1280_720_24fps.mp4'
+const videoUrl = '/videos/4911644-hd_1280_720_30fps.mp4'
+
 // Ref for the video element
 const backgroundVideo = ref(null)
 
@@ -71,7 +73,7 @@ let isReversing = false
 onMounted(() => {
     if (backgroundVideo.value) {
         // Set playback rate to slow down the video
-        backgroundVideo.value.playbackRate = 0.3 // Adjust this value as needed
+        backgroundVideo.value.playbackRate = 0.2 // Adjust this value as needed
     }
 })
 </script>
