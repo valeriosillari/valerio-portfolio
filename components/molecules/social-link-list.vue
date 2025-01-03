@@ -26,11 +26,6 @@ const props = defineProps({
 // https://dev.to/ceceliacreates/using-fontawesome-icons-with-nuxt-3-50cd
 const socialLinks = [
     {
-        name: 'Twitter',
-        url: 'https://twitter.com/stellavalerio/',
-        icon: 'twitter',
-    },
-    {
         name: 'LinkedIn',
         url: 'https://www.linkedin.com/in/valeriosillari/',
         icon: 'linkedin',
