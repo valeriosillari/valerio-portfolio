@@ -49,7 +49,7 @@
             width: auto;
             height: auto;
             // z-index: -1;
-            opacity: 0.2;
+            opacity: 0.075;
             object-fit: cover; /* Ensures the video always covers the container */
         }
 
@@ -61,9 +61,10 @@
 </style>
 
 <script setup>
-const videoUrl = '/videos/1926295-hd_1920_1080_25fps.mp4'
+// const videoUrl = '/videos/1926295-hd_1920_1080_25fps.mp4'
 // const videoUrl = '/videos/857134-hd_1280_720_24fps.mp4'
 // const videoUrl = '/videos/4911644-hd_1280_720_30fps.mp4'
+const videoUrl = '/videos/5167233-uhd_3840_2160_30fps.mp4'
 
 // Ref for the video element
 const backgroundVideo = ref(null)
@@ -72,7 +73,7 @@ onMounted(() => {
     if (backgroundVideo.value) {
         // Set playback rate to slow down the video
         // .8 max, than flickering. fiw speed int original video
-        backgroundVideo.value.playbackRate = 0.8 // Adjust this value as needed
+        backgroundVideo.value.playbackRate = 0.4 // Adjust this value as needed
     }
 })
 </script>
