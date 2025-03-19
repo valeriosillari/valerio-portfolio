@@ -236,6 +236,11 @@ export default defineNuxtConfig({
         ],
     },
 
+    site: {
+        url: appMainUrl,
+        name: headTitle,
+    },
+
     // buildModules: ['@nuxtjs/google-fonts'],
     modules: [
         '@nuxtjs/sitemap',
