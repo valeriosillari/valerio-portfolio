@@ -2,6 +2,10 @@
     "name": "nuxt-app",
     "private": true,
     "license": "GPL-3.0",
+    "volta": {
+        "node": "22.14.0",
+        "npm": "11.3.0"
+    },
     "scripts": {
         "build": "nuxt build",
         "dev": "nuxt dev",
