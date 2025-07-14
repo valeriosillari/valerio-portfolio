@@ -12,8 +12,8 @@
         "generate": "nuxt generate",
         "preview": "nuxt preview",
         "postinstall": "nuxt prepare",
-        "prettier-check": "prettier --check '**/*.{css,scss,js,vue,html}'",
-        "prettier": "prettier --write '**/*.{css,scss,js,vue,html}'"
+        "prettier:check": "prettier . --check",
+        "prettier:fix": "prettier --write --list-different ."
     },
     "devDependencies": {
         "@fortawesome/fontawesome-svg-core": "^6.6.0",
