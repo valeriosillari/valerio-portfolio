@@ -3,8 +3,8 @@
     "private": true,
     "license": "GPL-3.0",
     "volta": {
-        "node": "22.21.0",
-        "npm": "11.6.1"
+        "node": "24.11.1",
+        "npm": "11.6.2"
     },
     "scripts": {
         "build": "nuxt build",
