@@ -207,8 +207,6 @@ export default defineNuxtConfig({
         },
     },
 
-    devtools: { enabled: true },
-
     build: {
         // Font awesome trick, for fixing hydration
         // https://github.com/nuxt/nuxt/discussions/16014
