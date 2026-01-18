@@ -28,10 +28,10 @@ For detailed explanation on how Nuxt works, checkout the [Nuxt Official Website]
 
 ## TECH STACK
 
--   [Nuxt](https://nuxt.com/)
--   [Vue](https://vuejs.org/)
--   [Sass](https://sass-lang.com/)
--   [Prettier](https://prettier.io/)
+- [Nuxt](https://nuxt.com/)
+- [Vue](https://vuejs.org/)
+- [Sass](https://sass-lang.com/)
+- [Prettier](https://prettier.io/)
 
 ## TODOs:
 
@@ -39,10 +39,10 @@ For detailed explanation on how Nuxt works, checkout the [Nuxt Official Website]
 
 ## NICE TO HAVE:
 
--   about section: better design (layout / spaces)
--   button go to top (footer?)
--   ES linter?
--   css style lint?
--   nuxt-image plugin (image on assets folder)
--   headless CMS
--   better type writer effect (animation from bottom as enter, fade out + seo friendly + padding text)
+- about section: better design (layout / spaces)
+- button go to top (footer?)
+- ES linter?
+- css style lint?
+- nuxt-image plugin (image on assets folder)
+- headless CMS
+- better type writer effect (animation from bottom as enter, fade out + seo friendly + padding text)
