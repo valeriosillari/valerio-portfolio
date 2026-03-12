@@ -15,7 +15,7 @@
         "prettier:check": "prettier . --check",
         "prettier:fix": "prettier --write --list-different ."
     },
-    "devDependencies": {
+    "dependencies": {
         "@fortawesome/fontawesome-svg-core": "^6.6.0",
         "@fortawesome/free-brands-svg-icons": "^6.6.0",
         "@fortawesome/vue-fontawesome": "^3.0.8",
@@ -25,10 +25,12 @@
         "aos": "^2.3.4",
         "bootstrap": "5.3.2",
         "breakpoint-sass": "^3.0.0",
-        "nuxt": "^3.19.0",
-        "prettier": "^3.3.2",
-        "sass": "1.77.6",
+        "nuxt": "^3.21.1",
         "typed.js": "^2.0.16"
+    },
+    "devDependencies": {
+        "prettier": "^3.3.2",
+        "sass": "1.77.6"
     },
     "version": "11.0.1"
 }
