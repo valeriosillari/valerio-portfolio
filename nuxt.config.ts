@@ -242,7 +242,7 @@ export default defineNuxtConfig({
                 // all global var and mixins and functions
                 scss: {
                     additionalData:
-                        '@use "~/assets/sass/root_configuration.scss" as *',
+                        '@use "~/assets/sass/root_configuration.scss" as *;',
                 },
             },
         },
