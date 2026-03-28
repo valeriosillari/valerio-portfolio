@@ -25,7 +25,7 @@
 </template>
 
 <script setup>
-import packageJson from '../../package.json'
+import packageJson from '../../../package.json'
 
 const dateYear = new Date().getFullYear()
 const appVersion = packageJson.version
