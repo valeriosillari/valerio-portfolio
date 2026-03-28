@@ -47,7 +47,7 @@ useHead({
     ],
 })
 </script>
-<!-- 
+
 <style lang="scss">
 .b-page-error {
     padding-top: $space_06;
@@ -64,4 +64,4 @@ useHead({
         margin: $space_03 auto;
     }
 }
-</style> -->
+</style>

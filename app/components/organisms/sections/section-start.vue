@@ -12,7 +12,3 @@
         </div>
     </OrganismsSectionsSectionPrototype>
 </template>
-
-<script setup>
-// const aosElementBasicTiming = ref(250)
-</script>

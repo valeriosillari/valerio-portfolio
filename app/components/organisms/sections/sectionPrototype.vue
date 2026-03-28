@@ -28,7 +28,7 @@ const animationAttributes = computed(() => {
     return false
 })
 </script>
-<!-- 
+
 <style lang="scss">
 .b-section {
     padding: $space_04;
@@ -60,4 +60,4 @@ const animationAttributes = computed(() => {
         background-color: $color_section_contact_bg;
     }
 }
-</style> -->
+</style>

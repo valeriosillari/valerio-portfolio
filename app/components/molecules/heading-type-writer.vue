@@ -48,7 +48,7 @@ onMounted(() => {
     }, 2000)
 })
 </script>
-<!-- 
+
 <style lang="scss">
 .b-heading-type-writer {
     // 2 lines of text, magic number
@@ -83,4 +83,4 @@ onMounted(() => {
         }
     }
 }
-</style> -->
+</style>

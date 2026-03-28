@@ -42,7 +42,7 @@ const socialLinks = [
     },
 ]
 </script>
-<!-- 
+
 <style lang="scss">
 .b-social-link-list {
     &.is-section-contact {
@@ -92,4 +92,4 @@ const socialLinks = [
         }
     }
 }
-</style> -->
+</style>

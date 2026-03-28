@@ -109,7 +109,7 @@ useHead({
     ],
 })
 </script>
-<!-- 
+
 <style lang="scss">
 .b-page-privacy-policy {
     padding-top: $space_06;
@@ -119,4 +119,4 @@ useHead({
         margin-top: $space_03;
     }
 }
-</style> -->
+</style>
