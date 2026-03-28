@@ -14,8 +14,8 @@
         </div>
     </div>
 </template>
-
-<!-- TODO: clean all this css with better variables -->
+<!-- 
+<!-- TODO: clean all this css with better variables
 <style lang="scss">
 .b-avatar-svg-shape {
     display: block;
@@ -44,4 +44,4 @@
         }
     }
 }
-</style>
+</style> -->

@@ -16,5 +16,3 @@
 <script setup>
 // const aosElementBasicTiming = ref(250)
 </script>
-
-'data-aos': 'fade-up', 'data-aos-duration': '1000', 'data-aos-delay': '300',

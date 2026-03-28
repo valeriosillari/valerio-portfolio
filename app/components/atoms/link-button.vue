@@ -27,7 +27,7 @@ const props = defineProps({
     },
 })
 </script>
-
+<!-- 
 <style lang="scss">
 .b-link-button {
     @include transition($btn-transition);
@@ -45,4 +45,4 @@ const props = defineProps({
         color: $color_btn_text_hvr;
     }
 }
-</style>
+</style> -->

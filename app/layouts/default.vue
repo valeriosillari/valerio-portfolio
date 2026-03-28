@@ -29,7 +29,7 @@ watch(
     }
 )
 </script>
-
+<!-- 
 <style lang="scss">
 .page-enter-active,
 .page-leave-active {
@@ -41,4 +41,4 @@ watch(
     opacity: 0;
     filter: blur(1rem);
 }
-</style>
+</style> -->

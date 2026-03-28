@@ -40,7 +40,7 @@ const props = defineProps({
     },
 })
 </script>
-
+<!-- 
 <style lang="scss">
 .b-link-external {
     &.is-link-fancy {
@@ -81,4 +81,4 @@ const props = defineProps({
         }
     }
 }
-</style>
+</style> -->

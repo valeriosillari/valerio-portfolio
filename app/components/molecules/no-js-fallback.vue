@@ -14,7 +14,7 @@
         </span>
     </div>
 </template>
-
+<!-- 
 <style lang="scss">
 @keyframes fadeIn {
     0% {
@@ -48,4 +48,4 @@
         animation: fadeIn 3s;
     }
 }
-</style>
+</style> -->

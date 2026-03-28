@@ -236,20 +236,20 @@ export default defineNuxtConfig({
         ],
     ],
 
-    vite: {
-        css: {
-            preprocessorOptions: {
-                // all global var and mixins and functions
-                scss: {
-                    additionalData:
-                        '@use "@/assets/sass/root_configuration.scss" as *;',
-                },
-            },
-        },
-    },
+    // vite: {
+    //     css: {
+    //         preprocessorOptions: {
+    //             // all global var and mixins and functions
+    //             scss: {
+    //                 additionalData:
+    //                     '@use "@/assets/sass/root_configuration.scss" as *;',
+    //             },
+    //         },
+    //     },
+    // },
 
-    // all pure code (sass, css, scss ...)
-    css: ['@/assets/sass/root.scss'],
+    // // all pure code (sass, css, scss ...)
+    // css: ['@/assets/sass/root.scss'],
 
     compatibilityDate: '2025-10-25',
 })

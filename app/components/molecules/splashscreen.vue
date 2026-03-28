@@ -31,7 +31,7 @@ onMounted(() => {
     removeFadeOut(root.value, 1500)
 })
 </script>
-
+<!-- 
 <style lang="scss">
 .b-splashscreen {
     background: $color_splashscreen_bg;
@@ -84,4 +84,4 @@ onMounted(() => {
         overflow: hidden;
     }
 }
-</style>
+</style> -->

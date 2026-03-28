@@ -41,7 +41,7 @@ const footerLinks = [
     },
 ]
 </script>
-
+<!-- 
 <style lang="scss">
 .b-footer {
     padding: $space_04;
@@ -65,4 +65,4 @@ const footerLinks = [
         }
     }
 }
-</style>
+</style> -->
