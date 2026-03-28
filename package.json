@@ -29,7 +29,6 @@
         "typed.js": "^2.0.16"
     },
     "devDependencies": {
-        "@nuxt/devtools": "^4.0.0-alpha.3",
         "prettier": "^3.3.2",
         "sass": "1.77.6"
     },
