@@ -13,6 +13,9 @@
 <script setup>
 onMounted(() => {
     utilsRemoveNoJsClass()
+
+    // just for fun ;)
+    console.log('🚀')
 })
 </script>
 
