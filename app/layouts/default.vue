@@ -9,25 +9,14 @@
 
     <OrganismsFooter />
 </template>
-
+<
 <script setup>
-const route = useRoute()
-
 onMounted(() => {
     utilsRemoveNoJsClass()
 
     // just for fun ;)
     console.log('🚀')
 })
-
-watch(
-    // watch/listen a page/route change ...
-    () => route.fullPath,
-    () => {
-        // then check no js logic again
-        utilsRemoveNoJsClass()
-    }
-)
 </script>
 
 <style lang="scss">
