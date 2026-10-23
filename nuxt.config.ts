@@ -57,7 +57,7 @@ export default defineNuxtConfig({
 
             noscript: [
                 {
-                    // for AOS fallback when no js enabled
+                    // for AOS fallback when no js enabled | at GENERATE on deploy
                     // https://github.com/nuxt/nuxt/issues/13848
                     children: `
                         <style type="text/css">
