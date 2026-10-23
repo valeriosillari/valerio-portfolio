@@ -2,13 +2,14 @@
     "name": "valerio-portfolio",
     "private": true,
     "license": "GPL-3.0",
+    "type": "module",
     "engines": {
-        "node": "24.21.0",
-        "npm": "11.19.0"
+        "node": "24.22.1",
+        "npm": "11.19.1"
     },
     "volta": {
-        "node": "24.21.0",
-        "npm": "11.19.0"
+        "node": "24.22.1",
+        "npm": "11.19.1"
     },
     "scripts": {
         "build": "nuxt build",
@@ -20,21 +21,22 @@
         "prettier:fix": "prettier --write --list-different ."
     },
     "dependencies": {
-        "@fortawesome/fontawesome-svg-core": "^7.3.1",
-        "@fortawesome/free-brands-svg-icons": "^7.3.1",
-        "@fortawesome/vue-fontawesome": "^3.3.3",
         "@nuxtjs/google-fonts": "^3.2.0",
         "@nuxtjs/sitemap": "^8.3.0",
         "aos": "^2.3.4",
-        "bootstrap": "^5.3.8",
-        "breakpoint-sass": "^3.0.0",
-        "nuxt": "^4.5.1",
-        "typed.js": "^2.1.0"
+        "nuxt": "^4.6.1",
+        "typed.js": "^2.1.0",
+        "vue": "^3.5.13"
     },
     "devDependencies": {
-        "@types/node": "^24.13.3",
-        "prettier": "^3.9.6",
-        "sass": "^1.102.0"
+        "@fortawesome/fontawesome-svg-core": "^7.3.1",
+        "@fortawesome/free-brands-svg-icons": "^7.3.1",
+        "@fortawesome/vue-fontawesome": "^3.3.3",
+        "bootstrap": "^5.3.8",
+        "breakpoint-sass": "^3.0.0",
+        "@types/node": "^24.19.2",
+        "prettier": "^3.9.10",
+        "sass": "1.77.6"
     },
     "version": "12.0.0"
 }
